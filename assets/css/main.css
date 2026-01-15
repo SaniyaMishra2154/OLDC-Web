@@ -3,146 +3,131 @@
 
 
 html {
-    scroll-behavior: auto;
+scroll-behavior: auto;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Noto Serif", serif;
-
+font-family: "Noto Serif", serif;
 }
-
 body {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
+font-family: "Poppins", sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 14px;
+}
+.bg-primary {
+background-color: #4f0071 !important;
+background: #4f0071 !important;
 }
 
-.bg-primary {
-    background-color: #4f0071 !important;
-    background: #4f0071 !important;
-}
+
+
+
 
 .nav-brand img {
-    width: 140px;
-    position: absolute;
-    z-index: 100;
+width: 140px;
+position: absolute;
+z-index: 100;
 }
-
 .nav-search {
-    padding: 10px 10px;
-    display: flex;
-    background: #4f0071;
-    color: #fff;
+padding: 10px 10px;
+display: flex;
+background: #4f0071;
+color: #fff;
 }
-
-
 .right-brand img {
-    margin-left: 5px;
+margin-left: 5px;
 }
-
 .right-brand span {
-    font-weight: 600;
+font-weight: 600;
 }
-
 .right-brand .logo-icon {
-    width: 150px;
+width: 150px;
 }
-
 .border-cs {
-    border-top: solid 1px #4f0071;
+border-top: solid 1px #4f0071;
+}
+.hero .secondary-menu {
+z-index: 200;
+right: 18%;
+top: -5%;
 }
 
-.hero .secondary-menu {
-    z-index: 200;
-    right: 18%;
-    top: -5%;
-}
+
+
+
 
 /* Carousel */
-
 .carousel-control-next img,
 .carousel-control-prev img {
-    width: 30%;
+width: 30%;
 }
-
 .carousel-caption {
-    text-align: center;
-    top: 45%;
-    z-index: 100;
-    margin-right: 30%;
-
+text-align: center;
+top: 45%;
+z-index: 100;
+margin-right: 30%;
 }
-
 .carousel-caption h5,
 p {
-    color: #fff;
-    text-align: right;
+color: #fff;
+text-align: right;
 }
-
 .carousel-caption h5 {
-    font-size: 50px;
-    font-weight: 500;
+font-size: 50px;
+font-weight: 500;
 }
-
 .carousel-caption p {
-    font-size: 14;
-    font-weight: 400;
+font-size: 14;
+font-weight: 400;
 }
-
 .carousel-item img {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center top;
+width: 100%;
+height: 100vh;
+object-fit: cover;
+object-position: center top;
 }
-
 .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top right,
+position: absolute;
+width: 100%;
+height: 100%;
+background: linear-gradient(to top right,
             rgba(0, 0, 0, 0.7),
             rgba(0, 0, 0, 0));
-    z-index: 1;
+z-index: 1;
 }
-
 .carousel-indicators button {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.5;
-    margin: 0 6px;
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: #fff;
+opacity: 0.5;
+margin: 0 6px;
 }
-
 .carousel-indicators .active {
-    opacity: 1;
-    background-color: #ff7a00;
+opacity: 1;
+background-color: #ff7a00;
 }
-
 .carousel-dark .carousel-indicators [data-bs-target] {
-    background-color: rgb(137, 100, 33);
-    width: 15px;
-    height: 15px;
+background-color: rgb(137, 100, 33);
+width: 15px;
+height: 15px;
 }
 .btn {
-    padding: 3px 40px;
-    margin-left: 100px;
+padding: 3px 40px;
+margin-left: 100px;
 }
 .underline-btn {
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  padding-bottom: 6px;
+position: relative;
+color: #fff;
+text-decoration: none;
+font-size: 15px;
+padding-bottom: 6px;
 }
-
 .underline-btn::after {
   content: "";
   position: absolute;
@@ -153,8 +138,6 @@ p {
   background-color: #f5c400;
   margin-left: -50px;
 }
-
-
 /* Button */
 .btn-primary {
     --bs-btn-color: #fff;
@@ -173,11 +156,6 @@ p {
     --bs-btn-disabled-border-color: #4f0071;
     border-radius: 0px;
 }
-
-
-
-
-
 
 
 
@@ -263,7 +241,6 @@ p {
 
 
 
-
 .about-section {
 padding: 80px 0;
 position: relative;
@@ -337,7 +314,7 @@ width: 744px;
 height: 564px;
 max-width: 100%;
 }
-
+/*
 @media (max-width: 991px) {
 .about-title {
 font-size: 32px;
@@ -350,11 +327,7 @@ opacity: 0.08;
 margin-top: 40px;
 }
 }
-
-
-
-
-
+*/
 
 
 
@@ -523,11 +496,6 @@ margin-top: 40px;
 
 
 
-
-
-
-
-
 .news-section {
 background: #f3e9f9;
 padding: 30px;
@@ -587,17 +555,11 @@ padding: 1px;
 height: 460px;
 width: 429px;
 margin-left: 120px;
-overflow: hidden;
 }
 
 .featured-news img {
 width: 429px;
 height: 180px;
-transition: transform 0.5s ease;
-}
-
-.featured-news:hover img {
-transform: scale(1.12);        /* zoom level */
 }
 
 .featured-news h5 {
@@ -637,20 +599,6 @@ margin-top: 60px;
 border-color: #deb04c;
 box-shadow: 0 4px 10.5px -1px rgba(0, 0, 0, 0.25);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -753,3 +701,1302 @@ background: #6e0a96;
 
 
 
+
+
+
+
+/* LEFT CARD */
+.event-section {
+    background: #f7f3f7;
+}
+        .latest-card {
+            padding: 20px;
+            margin-top: -80px;
+        }
+
+        .latest-label {
+            color: red;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .latest-card img {
+            width: 100%;
+            margin: 12px 0;
+        }
+
+        .event-title {
+            color: #5a007a;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        .small {
+            color: black;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 400;
+            
+        }
+
+        .event-date {
+            font-size: 13px;
+            margin: 10px 0;
+            color: #000;
+            text-align: left;
+        }
+
+        .view-btn {
+            background: #5a007a;
+            color: #fff;
+            padding: 8px 45px;
+            border: none;
+            margin-top: 10px;
+        }
+
+        /* RIGHT PANEL */
+        .upcoming {
+            background: #5a007a;
+            color: #fff;
+            padding: 30px;
+            margin-top: -145px;
+            width: 505px;
+            height: 666px;
+            margin-left: 20px;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 92% 100%, 0 100%);
+        }
+
+        .upcoming h4 {
+            font-size: 32px;
+            padding-top: 60px;
+            font-weight: 400;
+        }
+
+        .event-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .event-date-box {
+            text-align: center;
+            margin-right: 12px;
+            font-weight: 900;
+        }
+
+        .event-date-box span {
+            display: block;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .event-date-box strong {
+            font-size: 32px;
+            font-weight: 900;
+        }
+
+        .event-text {
+            font-size: 16px;
+            flex: 1;
+            font-weight: 400;
+            margin-right: 10px;
+        }
+
+        .arrow-btn img {
+            width: 34px;
+            cursor: pointer;
+        }
+
+        .more-events {
+            margin-top: 30px;
+            padding-top: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-left: 100px;
+        }
+
+        .bottom-line {
+            width: 230px;
+            height: 3px;
+            background: #f5c400;
+            margin-left: 45px;   /* 👈 left shift */
+            margin-top: 8px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.admission-section {
+            background: #fff;
+            padding: 60px 0;
+        }
+
+        /* LEFT IMAGE */
+        .admission-img {
+            position: relative;
+        }
+
+        .admission-img img {
+            width: 974px;
+            height: 620px;
+            margin-left: -305px;
+            object-fit: cover;
+        }
+
+        /* RIGHT CARD */
+        .admission-card {
+            position: absolute;
+            z-index: 10;
+            background: #fff;
+            padding: 40px;
+            width: 696px;
+            height: 422px;
+            margin-left: -295px;
+            margin-top: -195px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .admission-title {
+            color: #5a007a;
+            font-size: 32px;
+            font-weight: 600;
+            position: relative;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        .admission-title::before {
+            content: "";
+            position: absolute;
+            top: -12px;
+            left: 0;
+            width: 65px;
+            height: 5px;
+            background: #5a007a;
+        }
+
+        .admission-text {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 25px;
+            text-align: left;
+            font-weight: 400;
+            margin-top: 30px;
+        }
+
+        .steps li {
+            list-style: none;
+            display: flex;
+            gap: 14px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 23px;
+            
+            
+        }
+
+        .steps span {
+            color: #5a007a;
+            font-weight: 700;
+            font-size: 22px;
+        }        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.champions-section {
+background: #fff;
+}
+
+/* Left content */
+.champions-left {
+    padding-left: 80px;
+}
+
+.top-line {
+    width: 65px;
+    height: 4px;
+    background: #6a1b9a;
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-left: 240px;
+}
+
+.text-uppercase {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.champions-left h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 15px;
+    
+} 
+
+.champions-left p {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+/* Arrows */
+.arrows {
+    display: flex;
+    gap: 15px;
+    margin-left: 220px;
+}
+
+.arrow {
+    width: 45px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+/* Slider */
+.champions-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+}
+
+/* Hide scrollbar */
+.champions-slider::-webkit-scrollbar {
+    display: none;
+}
+.champions-slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Cards */
+.champion-card {
+    min-width: 360px;
+    background: #f6f1f7;
+    position: relative;
+}
+
+.champion-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.champion-card .card-body {
+    padding: 20px;
+    border-right: 3px solid #6a1b9a;
+}
+
+.champion-card h5 {
+    color: #6a1b9a;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    color: #000;
+    text-align: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.career-section {
+            background-color: #f5eef4;
+            padding: 80px 0;
+        }
+
+        .section-line {
+            width: 65px;
+            height: 4px;
+            background-color: #5b1a82;
+            margin-bottom: 20px;
+        }
+
+        .career-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+
+        .career-text p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .career-link {
+            font-size: 18px;
+            font-weight: 600;
+            color: #000;
+            text-decoration: underline;
+            text-align: center;
+        }
+
+        .explore-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .explore-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .explore-list li {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+            cursor: pointer;
+            font-weight: 400;
+            text-align: right;
+        }
+
+        .explore-list li::after {
+            content: "›";
+            margin-left: 8px;
+            width: 32px;
+            height: 32px;
+            
+        }
+
+        .career-image {
+            border-bottom: 4px solid #d1a73a;
+            width: 702px;
+            height: 386px;
+            margin-bottom: -115px;
+            
+        }
+
+
+
+
+.career-cta-section {
+padding: 170px 0;
+background-color: #ffffff;
+text-align: center;
+padding-bottom: 40px;
+}
+.career-cta-text {
+max-width: 900px;
+margin: 0 auto 40px;
+font-size: 32px;
+font-weight: 700;
+line-height: 1.5;
+text-align: center;            
+color: #5b1a82;
+}
+.gold-divider {
+width: 65px;
+height: 4px;
+background-color: #d1a73a;
+margin: 0 auto 30px;
+}
+.career-email {
+font-size: 24px;
+text-align: center;
+color: #333;
+font-weight: 400;
+}
+.career-email span {
+font-weight: 700;
+font-size: 24px;
+text-decoration: underline;
+}
+
+
+
+
+
+.footer {
+background-color: #5b0a78;
+font-size: 14px;
+}
+.footer-links {
+list-style: none;
+padding: 0;
+}
+.footer-links li {
+margin-bottom: 12px;
+/*margin-left: 80px;*/
+}
+.footer-links a {
+color: #ffffff;
+text-decoration: none;
+font-size: 20px;
+font-weight: 200; 
+}
+.footer-links a:hover {
+text-decoration: underline;
+}
+.footer-title {
+font-weight: 600;
+margin-bottom: 8px;
+font-size: 22px;
+/*margin-left: 160px;*/
+}
+.footer-text {
+color: #ffffff;
+line-height: 1.6;
+text-align: start;
+font-size: 16px;
+font-weight: 200;
+/*margin-left: 160px;*/
+}
+.footer-divider {
+border-color: white;
+}
+.footer-social a {
+color: #ffffff;
+font-size: 25px;
+margin-left: 16px;
+}
+.footer-social a img {
+width: 20px;
+margin-top: -8px;
+height: 18px;
+}
+.footer-social a:hover {
+opacity: 0.8;
+}
+.footer-bottom {
+font-size: 18px;
+font-weight: 600;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Code */
+
+/* Section First */
+
+@media (max-width: 768px) {
+
+  /* Logo fix */
+  .nav-brand img {
+    position: static;
+    width: 120px;
+  }
+
+  /* Top border row */
+  .border-cs {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Secondary menu positioning */
+  .hero .secondary-menu {
+    position: static;
+    right: auto;
+    top: auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 0;
+  }
+
+  .secondary-menu .nav-link {
+    color: #fff;
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  /* Carousel image */
+  .carousel-item img {
+    height: 70vh;
+  }
+
+  /* Caption */
+  .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 0;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .carousel-caption h5 {
+    font-size: 32px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  /* Buttons */
+  .btn {
+    margin-left: 0;
+    padding: 6px 30px;
+  }
+
+  .underline-btn {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  .underline-btn::after {
+    width: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+  }
+
+  /* Carousel arrows */
+  .carousel-control-next img,
+  .carousel-control-prev img {
+    width: 20px;
+  }
+}
+
+
+
+
+
+/* Section Second */
+
+@media (max-width: 768px) {
+
+  /* Section heading text */
+  .section-text {
+    font-size: 22px;
+    padding: 0 15px;
+  }
+
+  .section-underline {
+    width: 40px;
+    height: 4px;
+  }
+
+  /* Cards layout */
+  .info-card img {
+    width: 100%;
+    height: 380px;
+  }
+
+  .card-overlay {
+    padding: 15px;
+  }
+
+  .card-overlay h5 {
+    font-size: 22px;
+    min-height: auto;
+  }
+
+  .card-overlay p {
+    font-size: 13px;
+    min-height: auto;
+  }
+
+  /* About section */
+  .about-section {
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .about-text {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .btn-purple {
+    margin-bottom: 25px;
+  }
+
+  /* Hex image */
+  .hex-main-image {
+    width: 100%;
+    max-width: 420px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+/* Section Third */
+
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  /* Background pattern control */
+  .about-section::before {
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+
+  /* Left content */
+  .about-sub {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .btn-purple {
+    padding: 8px 36px;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  /* Right image */
+  .hex-main-wrapper {
+    margin-top: 35px;
+  }
+
+  .hex-main-image {
+    width: 100%;
+    height: auto;
+    max-width: 420px;
+  }
+}
+
+
+
+
+
+/* Section Fourth */
+
+@media (max-width: 768px) {
+
+  /* Section spacing */
+  .courses-section {
+    padding: 30px 0;
+  }
+
+  /* LEFT PANEL */
+  .left-panel {
+    width: 100%;
+    min-height: auto;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .left-panel h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .yellow-line {
+    margin: 15px auto 25px;
+    width: 50px;
+  }
+
+  .left-panel p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .arrow-btns {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  /* RIGHT CONTENT */
+  .courses-section .col-lg-9 {
+    padding: 20px 15px !important;
+  }
+
+  /* Course cards */
+  .course-card {
+    height: 420px;
+    margin-top: 25px;
+  }
+
+  .cards-overlay {
+    height: auto;
+    padding: 12px;
+  }
+
+  .cards-overlay h5 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 4px 12px;
+  }
+
+  .mode {
+    font-size: 13px;
+  }
+
+  .rating {
+    font-size: 16px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  /* Button */
+  .see-more-btn {
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/* Section Fifth */
+
+@media (max-width: 768px) {
+
+  .news-section {
+    padding: 20px 10px;
+  }
+
+  .news-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .news-divider {
+    margin-bottom: 30px;
+  }
+
+  /* NEWS CARDS */
+  .news-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .news-card h6 {
+    font-size: 16px;
+  }
+
+  .news-card p {
+    font-size: 13px;
+  }
+
+  /* LEFT & RIGHT COLUMN */
+  .news-section .col-md-3 {
+    margin-bottom: 20px;
+  }
+
+  /* FEATURED NEWS (CENTER CARD) */
+  .featured-news {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
+
+  .featured-news img {
+    width: 100%;
+    height: auto;
+  }
+
+  .featured-news h5 {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .featured-news p {
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  /* BUTTON */
+  .styled-link {
+    font-size: 16px;
+    padding: 12px 40px;
+    margin-top: 25px;
+  }
+}
+
+
+
+
+
+/* Section sixth */
+
+@media (max-width: 768px) {
+
+  .trainer-section {
+    padding: 40px 0;
+  }
+
+  /* LEFT CONTENT */
+  .section-title {
+    font-size: 26px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .section-para {
+    font-size: 16px;
+  }
+
+  .meet-btn {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+
+  /* ARROWS CENTER */
+  .scroll-arrows {
+    justify-content: flex-start;
+    margin-top: 25px;
+  }
+
+  .scroll-arrows img {
+    width: 38px;
+    margin-top: 0;
+  }
+
+  /* RIGHT SECTION */
+  .trainer-scroll {
+    height: 700px;        /* remove fixed height */
+    overflow: hidden;
+    margin-top: 40px;
+  }
+
+  .trainer-list {
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding-right: 5px;
+     scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+    .trainer-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* TRAINER CARD */
+  .trainer-card {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  .trainer-card img {
+    width: 100%;
+    height: auto;
+    max-height: 260px;
+    object-fit: cover;
+  }
+
+  .trainer-name {
+    font-size: 20px;
+  }
+
+  .trainer-role {
+    font-size: 13px;
+  }
+
+  .trainer-desc {
+    font-size: 15px;
+  }
+
+}
+
+
+
+
+
+/* Section Seventh */
+
+@media (max-width: 768px) {
+
+  .event-section {
+    padding: 30px 0;
+  }
+
+  /* LEFT CARD */
+  .latest-card {
+    margin-top: 0;
+    padding: 15px;
+  }
+
+  .latest-label {
+    font-size: 18px;
+  }
+
+  .event-title {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .small {
+    font-size: 15px;
+  }
+
+  .view-btn {
+    padding: 8px 30px;
+    font-size: 14px;
+  }
+
+  /* RIGHT UPCOMING PANEL */
+  .upcoming {
+    width: 100%;               /* FIX */
+    height: auto;              /* FIX */
+    margin: 30px 0 0 0;        /* remove negative margin */
+    padding: 25px 20px;
+    clip-path: none;           /* mobile safe */
+    border-radius: 10px;
+  }
+
+  .upcoming h4 {
+    font-size: 24px;
+    padding-top: 0;
+    margin-bottom: 25px;
+  }
+
+  /* EVENT ITEMS */
+  .event-item {
+    margin: 25px 0;
+    gap: 12px;
+  }
+
+  .event-date-box span {
+    font-size: 16px;
+  }
+
+  .event-date-box strong {
+    font-size: 22px;
+  }
+
+  .event-text {
+    font-size: 14px;
+  }
+
+  .arrow-btn img {
+    width: 28px;
+  }
+
+  /* MORE EVENTS */
+  .more-events {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .bottom-line {
+    margin: 8px auto 0;
+    width: 160px;
+  }
+}
+
+
+
+
+
+/* Section Eighth */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Nineth */
+
+@media (max-width: 768px) {
+    
+    .champions-left {
+        padding-left: 15px; /* remove large padding */
+        text-align: center;  /* center all text */
+        margin-bottom: 20px;
+    }
+
+    .top-line {
+        margin-left: auto;   /* center the purple line */
+        margin-right: auto;
+        display: block;
+    }
+
+    .text-uppercase {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .champions-left h2 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .champions-left p {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* Arrows */
+    .arrows {
+        justify-content: center; /* center the arrows */
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .arrow {
+        width: 35px;
+        margin-top: 0;
+    }
+
+    /* Slider */
+    .champions-slider {
+        gap: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Cards */
+    .champion-card {
+        min-width: 280px; /* smaller card width for mobile */
+    }
+
+    .champion-card img {
+        height: 180px; /* smaller height */
+    }
+
+    .champion-card .card-body {
+        padding: 15px;
+    }
+
+    .champion-card h5 {
+        font-size: 18px;
+    }
+
+    .card-body p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+/* Section Tenth */
+
+@media (max-width: 768px) {
+    .career-section {
+        padding: 40px 15px;
+    }
+   
+    .section-line {
+         margin: 0 auto 20px auto; /* top/bottom margin 20px, left-right auto for center */
+    }
+
+    .career-title {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .career-text p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .career-link {
+        display: inline-block;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    /* Stack columns vertically */
+    .career-section .row {
+        flex-direction: column;
+    }
+
+    .career-section .col-lg-6 {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Explore services section */
+    .explore-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .explore-list {
+        text-align: center;
+    }
+
+    .explore-list li {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    /* Adjust image */
+    .career-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+/* Section Eleventh */
+
+@media (max-width: 768px) {
+    .career-cta-section {
+        padding: 80px 20px; /* reduce top/bottom padding */
+    }
+
+    .career-cta-text {
+        font-size: 24px; /* smaller font for mobile */
+        line-height: 1.4;
+        max-width: 100%; /* full width on mobile */
+        margin-bottom: 30px;
+        padding: 0 10px;
+    }
+
+    .gold-divider {
+        width: 50px; /* smaller divider */
+        height: 3px;
+        margin-bottom: 20px;
+    }
+
+    .career-email {
+        font-size: 18px;
+    }
+
+    .career-email span {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+/* Footer Section */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-social {
+    text-align: center !important;
+    margin-top: 20px;
+  }
+  .footer-social a {
+    margin: 0 10px;
+  }
+  .footer-text {
+    text-align: center;
+  }
+}
