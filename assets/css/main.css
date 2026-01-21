@@ -1054,7 +1054,7 @@ body {
 
 /* Section First */
 
-@media (max-width: 85.375rem) {
+@media (max-width: 1366px) {
   .hero-section {
     min-height: 85vh;
     padding: 4rem 6vw;
@@ -1104,16 +1104,18 @@ body {
     visibility: visible !important;
     width: 100%;
     z-index: 999;
-    margin-top: -30%;
+    margin-top: 5%;
     margin-left: -15%;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    display: none;
   }
 }
 @media (max-width: 375px) {
+  /* Top border row */
+  .border-cs {
+    flex-direction: row;
+    align-items: center;
+    border-top: 2px solid #410564;
+  }
+
   .navbar-brand img {
     width: 55vw;
   }
@@ -1125,9 +1127,6 @@ body {
   .nav-search i {
     font-size: 1.4rem;
   }
-}
-
-@media (max-width: 23.4375em) {
   .hero,
   .carousel-item {
     min-height: 55vh;
@@ -1143,11 +1142,6 @@ body {
     z-index: 999;
     margin-top: -40%;
     margin-left: -15%;
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    display: none;
   }
 }
 
@@ -1233,8 +1227,7 @@ body {
 @media (min-width: 1024px) {
   .hero .secondary-menu {
     z-index: 200;
-    right: 9%;
-    top: -6%;
+    top: -5%;
   }
   .carousel-caption h5 {
     font-size: 2.5rem;
@@ -1246,7 +1239,7 @@ body {
 
 /* Section Second */
 
-@media (max-width: 85.375rem) {
+@media (max-width: 1366px) {
   .olcd-section {
     padding: 4rem 0;
   }
@@ -1260,7 +1253,7 @@ body {
     gap: 1.5rem 0;
   }
 }
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .info-card {
     width: 90%;
     margin-bottom: 1.5rem;
@@ -1310,7 +1303,7 @@ body {
 
 /* Section Third */
 
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .about-title {
     font-size: 1.5rem;
     text-align: center;
@@ -1402,7 +1395,7 @@ body {
 
 /* Section Fourth */
 /*
-@media (max-width: 85.375rem) {
+@media (max-width: 1366px) {
   .courses-section {
     padding: 4rem 3vw;
   }
@@ -1427,7 +1420,7 @@ body {
     gap: 5rem;
   }
 }*/
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .course-scroll-wrapper {
     overflow-x: auto;
   }
@@ -1441,13 +1434,13 @@ body {
   }
 }
 
-@media (max-width: 64em) {
+@media (max-width: 1024px) {
   .course-scroll .col-md-3 {
     width: 40%;
   }
 }
 
-@media (max-width: 48em) {
+@media (max-width: 768px) {
   .course-scroll .col-md-3 {
     width: 80%;
   }
@@ -1662,19 +1655,19 @@ body {
     order: 99;
   }
 }
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .news-btn-col {
     order: 99;
   }
 }
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .styled-link {
     padding: 1rem;
     font-size: 1rem;
     margin-top: 1.5rem;
   }
 }
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .news-title {
     font-size: 1.4rem;
     text-align: center;
@@ -1689,7 +1682,7 @@ body {
     font-size: 0.9rem;
   }
 }
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   /* 375px */
   .news-section .row {
     display: flex;
@@ -1697,7 +1690,7 @@ body {
   }
 }
 
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .news-section .row > div {
     width: 100%;
   }
@@ -1706,12 +1699,12 @@ body {
     order: 99;
   }
 }
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .news-btn-col {
     order: 99;
   }
 }
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .styled-link {
     padding: 1rem;
     font-size: 1rem;
@@ -1950,7 +1943,7 @@ body {
 
 /* ===== MOBILE FORCE ===== */
 
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .event-card {
     width: 100%;
     margin-bottom: 1.5rem;
@@ -2149,7 +2142,7 @@ body {
 
 /* Section Eighth */
 
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .admission-card {
     padding: 1rem;
     text-align: center;
@@ -2238,7 +2231,7 @@ body {
 
 /* Section Nineth */
 
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .champions-slider {
     overflow-x: auto;
   }
@@ -2414,7 +2407,7 @@ body {
   }
 }
 
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .career-title {
     font-size: 1.4rem;
     text-align: center;
@@ -2523,7 +2516,7 @@ body {
 
 /* Footer Section */
 
-@media (max-width: 23.4375em) {
+@media (max-width: 375px) {
   .footer {
     text-align: center;
   }
@@ -2556,7 +2549,7 @@ body {
     text-align: center;
   }
 }
-@media (max-width: 85.375rem) {
+@media (max-width: 1366px) {
   footer {
     padding: 3rem 4vw;
   }
@@ -2568,5 +2561,33 @@ body {
   footer p,
   footer li {
     font-size: 0.9rem;
+  }
+}
+/* Mobile phones */
+@media (max-width: 767px) {
+  .container {
+    max-width: 100%; /* mobile pe full width */
+    padding: 0 10px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 768px; /* tablet */
+  }
+}
+
+/* Small Desktop */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* Large Desktop / Projector */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
