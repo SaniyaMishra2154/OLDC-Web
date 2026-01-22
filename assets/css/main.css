@@ -4,6 +4,19 @@
 html {
   scroll-behavior: auto;
 }
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.container,
+.container-fluid {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 h1,
 h2,
 h3,
@@ -1083,6 +1096,10 @@ body {
   .navbar-brand img {
     width: 55vw;
   }
+  .hero-section {
+    min-height: 100vh;
+    height: auto;
+  }
 
   .navbar-nav {
     text-align: center;
@@ -1431,7 +1448,7 @@ body {
   }
 
   .course-card {
-    min-width: 70vw;
+    min-width: 64vw;
   }
 
   .course-card h5 {
@@ -2404,12 +2421,6 @@ body {
   .career-link {
     margin-left: 7%;
   }
-  .explore-title {
-    margin-right: 25%;
-  }
-  .explore-list {
-    margin-right: 25%;
-  }
 }
 
 @media (max-width: 375px) {
@@ -2566,5 +2577,16 @@ body {
   footer p,
   footer li {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  section,
+  div {
+    max-width: 100%;
   }
 }
