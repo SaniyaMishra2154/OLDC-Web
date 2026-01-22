@@ -1308,6 +1308,12 @@ body {
 
 /* Section Third */
 
+@media (max-width: 430px) {
+  .about-section::before {
+    z-index: 0;
+  }
+}
+
 @media (max-width: 375px) {
   .about-title {
     font-size: 1.5rem;
