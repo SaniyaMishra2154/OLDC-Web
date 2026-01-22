@@ -1104,7 +1104,7 @@ body {
     visibility: visible !important;
     width: 100%;
     z-index: 999;
-    margin-top: 5%;
+    margin-top: -20%;
     margin-left: -15%;
   }
 }
@@ -1307,12 +1307,6 @@ body {
 }
 
 /* Section Third */
-
-@media (max-width: 430px) {
-  .about-section::before {
-    z-index: 0;
-  }
-}
 
 @media (max-width: 375px) {
   .about-title {
