@@ -287,6 +287,10 @@ body {
 /* 📱 PHONES – 600px */
 /* ========================= */
 @media (max-width: 37.5rem) {
+  .announcement-header .bar {
+    margin-left: 1rem;
+  }
+
   .announcement-card {
     flex-direction: column;
     align-items: flex-start;
@@ -343,5 +347,299 @@ body {
 
   .content p {
     font-size: 0.9rem;
+  }
+}
+
+/*---------- Section Third ----------*/
+:root {
+  --purple: #5a0a82;
+  --light-bg: #f6f3f8;
+  --text-gray: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* SECTION */
+.latest-news {
+  width: 100%;
+  background: var(--light-bg);
+}
+
+/* TOP BAR */
+.news-bar {
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bar-left .line {
+  width: 0.3rem;
+  height: 3rem;
+  background: var(--purple);
+}
+
+.bar-left h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.bar-left .pipe {
+  color: #999;
+}
+
+.bar-left small {
+  font-size: 1.3rem;
+  letter-spacing: 0.3em;
+  color: #777;
+}
+
+/* SEARCH */
+.bar-right {
+  display: flex;
+}
+
+.bar-right input {
+  border: 0.08rem solid var(--purple);
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  outline: none;
+}
+
+.bar-right button {
+  background: var(--purple);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+/* BODY */
+.news-body {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  gap: 2rem;
+  background-color: #eeecec;
+}
+
+/* IMAGE (≈60%) */
+.news-img {
+  flex: 1.4;
+}
+
+.news-img img {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 14rem;
+}
+
+/* CONTENT (≈40%) */
+.news-info {
+  flex: 1;
+  margin-top: 4rem;
+  line-height: 4rem;
+}
+
+.news-date {
+  font-size: 1.3rem;
+  color: #777;
+}
+
+.news-info h3 {
+  font-size: 1.6rem;
+  margin: 0.8rem 0 1rem;
+  line-height: 1.35;
+  font-weight: bold;
+}
+
+.news-info p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--text-gray);
+  margin-bottom: 1.2rem;
+}
+
+.news-info a {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--purple);
+  text-decoration: underline;
+}
+
+/* 📱 PHONES – 600px */
+@media (max-width: 37.5rem) {
+  .news-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .news-body {
+    flex-direction: column;
+  }
+
+  .bar-right {
+    width: 100%;
+  }
+
+  .bar-right input {
+    flex: 1;
+  }
+  .news-img img {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .news-info {
+    text-align: center;
+  }
+}
+
+/* 📱 TABLETS – 768px */
+@media (min-width: 48rem) {
+  .news-info h3 {
+    font-size: 1.7rem;
+  }
+}
+
+/* 💻 LAPTOPS – 992px */ /*
+@media (min-width: 62rem) {
+  .news-body {
+    padding: 2.5rem;
+  }
+}*/
+
+/* 🖥️ LARGE – 1200px */ /*
+@media (min-width: 75rem) {
+  .news-bar,
+  .news-body {
+    width: 80%;
+  }
+}*/
+
+/*---------- Section Fourth ----------*/
+:root {
+  --purple: #5a0a82;
+  --text-gray: #555;
+  --border-gray: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* SECTION */
+.featured-news1 {
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* LEFT VERTICAL TITLE */
+.featured-title1 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  border-right: 0.08rem solid var(--border-gray);
+  padding-right: 1.2rem;
+}
+
+.featured-title1 span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--purple);
+  letter-spacing: 0.08em;
+}
+
+/* GRID */
+.news-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+/* CARD */
+.news-cards img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+}
+
+.news-cards h4 {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.news-cards p {
+  font-size: 0.85rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 0.6rem;
+}
+
+.news-cards a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+/* 📱 PHONES – 600px */
+@media (max-width: 37.5rem) {
+  .featured-news1 {
+    flex-direction: column;
+  }
+
+  .featured-title1 {
+    writing-mode: horizontal-tb;
+    transform: none;
+    border-right: none;
+    border-bottom: 0.08rem solid var(--border-gray);
+    padding-bottom: 0.8rem;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 📱 TABLETS – 768px */
+@media (min-width: 48rem) {
+  .news-cards h4 {
+    font-size: 1.05rem;
+  }
+}
+
+/* 💻 LAPTOPS – 992px */
+@media (min-width: 62rem) {
+  .featured-news1 {
+    width: 85%;
+  }
+}
+
+/* 🖥️ LARGE – 1200px */
+@media (min-width: 75rem) {
+  .featured-news1 {
+    width: 80%;
   }
 }

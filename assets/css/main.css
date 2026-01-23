@@ -34,6 +34,9 @@ body {
 .bg-primary {
   background-color: #4f0071 !important;
 }
+.top-header {
+  z-index: 99;
+}
 
 .nav-brand img {
   width: 140px;
@@ -60,7 +63,7 @@ body {
 }
 .hero .secondary-menu {
   z-index: 200;
-  right: 18%;
+  right: 20%;
   top: -5%;
 }
 
@@ -1158,7 +1161,8 @@ body {
     width: 100%;
     z-index: 999;
     margin-top: -40%;
-    margin-left: -15%;
+    /*margin-left: -15%;*/
+    margin-left: 0rem;
   }
 }
 
@@ -1244,13 +1248,35 @@ body {
 @media (min-width: 1024px) {
   .hero .secondary-menu {
     z-index: 200;
-    top: -5%;
+    top: -8%;
+    right: 8%;
+  }
+  .carousel-caption {
+    top: 30%;
   }
   .carousel-caption h5 {
     font-size: 2.5rem;
   }
   .btn {
     margin-left: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  .carousel-caption {
+    top: 50%;
+    left: 5%;
+    margin-right: 0;
+    text-align: center;
+    width: 90%;
+  }
+
+  .carousel-caption h5,
+  .carousel-caption p {
+    text-align: center;
+  }
+  .carousel-control-next img,
+  .carousel-control-prev img {
+    width: 60%;
   }
 }
 
@@ -1305,7 +1331,7 @@ body {
   /* Cards layout */
   .info-card img {
     width: 100%;
-    height: 380px;
+    height: 100%;
   }
 
   .card-overlay {
@@ -1313,13 +1339,12 @@ body {
   }
 
   .card-overlay h5 {
-    font-size: 22px;
+    font-size: 2rem;
     min-height: auto;
   }
 
   .card-overlay p {
-    font-size: 13px;
-    min-height: auto;
+    display: none;
   }
 }
 
@@ -1337,12 +1362,16 @@ body {
   }
 
   .hex-main-wrapper {
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
     justify-content: center;
   }
 
-  .hexagon {
+  .hex-main-image {
     width: 38vw;
+  }
+  .btn-purple {
+    margin-right: 4rem;
   }
 }
 
@@ -1414,9 +1443,23 @@ body {
     margin-top: 40px;
   }
 }
+@media (max-width: 1024px) {
+  .about-sub {
+    text-align: center;
+  }
+  .about-title {
+    text-align: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .btn-purple {
+    margin-left: 30%;
+  }
+}
 
 /* Section Fourth */
-/*
+
 @media (max-width: 1366px) {
   .courses-section {
     padding: 4rem 3vw;
@@ -1441,12 +1484,8 @@ body {
   .course-scroll {
     gap: 5rem;
   }
-}*/
+}
 @media (max-width: 375px) {
-  .course-scroll-wrapper {
-    overflow-x: auto;
-  }
-
   .course-card {
     min-width: 64vw;
   }
@@ -1454,17 +1493,21 @@ body {
   .course-card h5 {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 1024px) {
-  .course-scroll .col-md-3 {
-    width: 40%;
+  .container-fluid {
+    width: 100%;
+    overflow: visible;
+  }
+  .left-panel {
+    width: 10%;
+  }
+  .right-panel {
+    width: 90%;
   }
 }
 
 @media (max-width: 768px) {
   .course-scroll .col-md-3 {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1604,6 +1647,9 @@ body {
   }
 
   /* COURSE CARD */
+  .course-scroll .col-md-3 {
+    width: 37%;
+  }
   .course-card {
     height: 30rem;
     width: 17rem;
@@ -1648,7 +1694,22 @@ body {
     font-size: 1rem;
   }
 }
-
+@media (max-width: 1024px) {
+  /* Row ko forcefully horizontal rakho */
+  .courses-section .row {
+    flex-wrap: nowrap;
+  }
+  .see-more-btn {
+    margin-right: 38%;
+  }
+  .course-scroll {
+    gap: 0rem;
+    width: 150%;
+  }
+  .left-panel p {
+    text-align: right;
+  }
+}
 /* Section Fifth */
 
 @media (max-width: 430px) {
@@ -1657,6 +1718,10 @@ body {
     text-align: center;
   }
 
+  .featured-news {
+    background-color: #f3e9f9;
+    color: black;
+  }
   .news-card,
   .featured-news {
     margin-bottom: 1rem;
@@ -1695,6 +1760,10 @@ body {
     text-align: center;
   }
 
+  .featured-news {
+    background-color: #f3e9f9;
+    color: black;
+  }
   .news-card,
   .featured-news {
     margin-bottom: 1rem;
@@ -1800,6 +1869,15 @@ body {
     margin-top: 25px;
   }
 }
+@media (max-width: 768px) {
+  .news-section .row > div {
+    width: 100%;
+  }
+
+  .news-section .row > div:has(.styled-link) {
+    order: 99;
+  }
+}
 @media (min-width: 1024px) {
   /* 1024px */
 
@@ -1881,9 +1959,6 @@ body {
 /* Section sixth */
 
 @media (max-width: 768px) {
-}
-
-@media (max-width: 768px) {
   .trainer-section {
     padding: 40px 0;
   }
@@ -1958,6 +2033,11 @@ body {
 
   .trainer-desc {
     font-size: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .trainer-scroll {
+    margin-top: 3rem;
   }
 }
 
@@ -2161,6 +2241,12 @@ body {
     margin-top: 0.5rem;
   }
 }
+@media (max-width: 1024px) {
+  .upcoming {
+    margin-top: 1rem;
+    width: 95%;
+  }
+}
 
 /* Section Eighth */
 
@@ -2260,6 +2346,18 @@ body {
 
   .champion-card {
     min-width: 85vw;
+  }
+  .top-line {
+    text-align: center;
+  }
+  .text-uppercase {
+    margin-left: 4rem;
+  }
+  .champions-left h2 {
+    margin-left: 4rem;
+  }
+  .champions-left p {
+    margin-left: 4rem;
   }
 }
 
@@ -2414,6 +2512,18 @@ body {
     line-height: 1.6;
   }
 }
+@media (max-width: 1024px) {
+  .champions-left {
+    margin-left: -2rem;
+  }
+  .top-line {
+    margin-left: 20rem;
+  }
+  .arrows {
+    margin-left: 18rem;
+    margin-bottom: 2rem;
+  }
+}
 
 /* Section Tenth */
 
@@ -2464,6 +2574,7 @@ body {
     display: inline-block;
     text-align: center;
     margin-top: 15px;
+    margin-left: 11%;
   }
 
   /* Stack columns vertically */
@@ -2480,7 +2591,7 @@ body {
   /* Explore services section */
   .explore-title {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 4%;
   }
 
   .explore-list {
@@ -2588,5 +2699,115 @@ body {
   section,
   div {
     max-width: 100%;
+  }
+}
+
+/* ------------ Platforms ----------- */
+:root {
+  --purple: #6a1b9a;
+  --text-dark: #222;
+  --text-light: #555;
+}
+/* Section */
+.platforms {
+  padding: 4rem 2rem;
+  background: rgb(248, 249, 250);
+  margin-bottom: 3rem;
+}
+
+.platform-wrapper {
+  max-width: 75rem;
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+/* Card */
+.platform-card {
+  flex: 1;
+  text-align: center;
+}
+
+.platform-card img {
+  width: 100%;
+  max-width: 30rem;
+  margin-bottom: 2rem;
+}
+
+.platform-card h2 {
+  color: var(--purple);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-decoration-line: underline;
+  font-weight: 900;
+}
+
+.tagline {
+  font-size: 0.85rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.btn {
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  border-bottom: 0.15rem solid #f0b429;
+  padding-bottom: 0.3rem;
+  margin-left: 0rem;
+}
+
+/* Divider */
+.divider {
+  width: 0.3rem;
+  background: #ccc;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Phones */
+@media (max-width: 37.5em) {
+  .platform-wrapper {
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+  }
+}
+
+/* Tablets */
+@media (min-width: 48em) and (max-width: 61.99em) {
+  .platform-wrapper {
+    gap: 2rem;
+  }
+}
+
+/* Laptops */
+@media (min-width: 62em) {
+  .platforms {
+    padding: 5rem 3rem;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 75em) {
+  .platform-card img {
+    max-width: 34rem;
   }
 }
