@@ -1071,6 +1071,11 @@ body {
 /* Section First */
 
 @media (max-width: 1366px) {
+  .border-cs {
+    flex-direction: row;
+    align-items: center;
+    border-top: 2px solid #410564;
+  }
   .hero-section {
     min-height: 85vh;
     padding: 4rem 6vw;
@@ -1092,6 +1097,9 @@ body {
   .navbar-nav {
     gap: 1rem;
     margin-bottom: 1.6%;
+  }
+  .hero .secondary-menu {
+    margin-left: 0;
   }
 }
 
@@ -1124,8 +1132,17 @@ body {
     visibility: visible !important;
     width: 100%;
     z-index: 999;
-    margin-top: -20%;
-    margin-left: -15%;
+    margin-top: -30%;
+    margin-left: 0%;
+  }
+   /* Individual buttons full touch-friendly */
+  .carousel-caption a,
+  .carousel-caption button {
+    width: 100%;
+    max-width: 10rem;
+    text-align: center;
+    color: white;
+    padding-right: rem;
   }
 }
 @media (max-width: 375px) {
@@ -1164,6 +1181,9 @@ body {
     /*margin-left: -15%;*/
     margin-left: 0rem;
   }
+  
+  
+
 }
 
 @media (max-width: 768px) {
@@ -1221,9 +1241,14 @@ body {
   }
 
   /* Buttons */
-  .btn {
-    margin-left: 10%;
-    padding: 6px 30px;
+   /* Individual buttons full touch-friendly */
+  .carousel-caption a,
+  .carousel-caption button {
+    width: 100%;
+    max-width: 15rem;
+    text-align: center;
+    color: white;
+    
   }
 
   .underline-btn {
@@ -1252,13 +1277,18 @@ body {
     right: 8%;
   }
   .carousel-caption {
-    top: 30%;
+    top: 40%;
   }
   .carousel-caption h5 {
     font-size: 2.5rem;
   }
-  .btn {
-    margin-left: 30%;
+  .carousel-caption a,
+  .carousel-caption button {
+    width: 100%;
+    max-width: 13rem;
+    text-align: center;
+    color: white;
+    margin-left: 4rem;
   }
 }
 @media (max-width: 1024px) {
@@ -1278,6 +1308,17 @@ body {
   .carousel-control-prev img {
     width: 60%;
   }
+  .carousel-caption a,
+  .carousel-caption button {
+    width: 100%;
+    max-width: 15rem;
+    text-align: center;
+    color: white;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+ 
 }
 
 /* Section Second */
@@ -1297,6 +1338,9 @@ body {
   }
 }
 @media (max-width: 375px) {
+  .col-lg-4 {
+    margin-left: 1rem;
+  }
   .info-card {
     width: 90%;
     margin-bottom: 1.5rem;
@@ -1313,6 +1357,9 @@ body {
 @media (max-width: 430px) {
   .card-overlay p {
     display: none;
+  }
+  .col-lg-4 {
+    margin-left: 1rem;
   }
 }
 
@@ -1349,6 +1396,20 @@ body {
 }
 
 /* Section Third */
+@media (max-width: 430px) {
+ .about-section .btn-purple,
+  .about-section a {
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    margin-left: 3rem;
+    margin-right: 2rem;
+  }
+  .hex-main-wrapper {
+    width: 100%;
+    margin-left: 1rem;
+  }
+}
 
 @media (max-width: 375px) {
   .about-title {
@@ -1363,15 +1424,24 @@ body {
 
   .hex-main-wrapper {
     margin-top: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     justify-content: center;
+    width: 100%;
   }
 
   .hex-main-image {
     width: 38vw;
   }
   .btn-purple {
-    margin-right: 4rem;
+    margin-right: -1rem;
+  }
+  .about-section .btn-purple,
+  .about-section a {
+    display: block;
+    margin-left: auto;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
 }
 
@@ -1415,6 +1485,9 @@ body {
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 25px;
+  }
+  .about-section .btn-purple {
+    margin-left: 0rem;
   }
 
   /* Right image */
@@ -1485,23 +1558,105 @@ body {
     gap: 5rem;
   }
 }
-@media (max-width: 375px) {
-  .course-card {
-    min-width: 64vw;
+@media (max-width: 430px) {
+    .courses-section .left-panel p {
+    text-align: center;
+    margin: 0 auto;
   }
 
-  .course-card h5 {
-    font-size: 1rem;
+    /* ✅ Sirf outer layout vertical */
+  .courses-section > .container-fluid > .row {
+    flex-direction: column;
   }
-  .container-fluid {
+
+  /* Left panel */
+  .courses-section .left-panel {
     width: 100%;
-    overflow: visible;
+    max-width: 100%;
+    padding: 2.5rem 1.5rem;
   }
-  .left-panel {
-    width: 10%;
+
+  /* Right panel */
+  .courses-section .col-lg-9 {
+    width: 100%;
+    max-width: 100%;
   }
-  .right-panel {
-    width: 90%;
+
+  /* 🔥 Cards row – horizontal scroll */
+  .courses-section .col-lg-9 .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0rem;
+  }
+
+  /* 🔥 Bootstrap column reset (MAIN FIX) */
+  .courses-section .col-lg-9 .col-md-3 {
+    flex: 0 0 auto;
+    width: 85%;
+    max-width: 100%;
+  }
+
+  /* Card height normal */
+  .course-card {
+    height: auto;
+  }
+ .courses-section .see-more-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+}
+@media (max-width: 375px) {
+
+  .courses-section .left-panel p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+    /* ✅ Sirf outer layout vertical */
+  .courses-section > .container-fluid > .row {
+    flex-direction: column;
+  }
+
+  /* Left panel */
+  .courses-section .left-panel {
+    width: 100%;
+    max-width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  /* Right panel */
+  .courses-section .col-lg-9 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* 🔥 Cards row – horizontal scroll */
+  .courses-section .col-lg-9 .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0rem;
+  }
+
+  /* 🔥 Bootstrap column reset (MAIN FIX) */
+  .courses-section .col-lg-9 .col-md-3 {
+    flex: 0 0 auto;
+    width: 85%;
+    max-width: 100%;
+  }
+
+  /* Card height normal */
+  .course-card {
+    height: auto;
+  }
+ .courses-section .see-more-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 
@@ -1519,7 +1674,7 @@ body {
 
   /* LEFT PANEL */
   .left-panel {
-    width: 100%;
+    width: 40%;
     min-height: auto;
     padding: 50px 20px;
     text-align: center;
@@ -1537,7 +1692,10 @@ body {
 
   .left-panel p {
     font-size: 14px;
+  }
+  .courses-section .left-panel p {
     text-align: center;
+    margin: 0 auto;
   }
 
   .arrow-btns {
@@ -1591,6 +1749,10 @@ body {
   }
 }
 @media (min-width: 1024px) {
+
+  .courses-section .row {
+    gap: 0rem;   /* cards ke beech gap */
+  }
   /* SECTION */
   .courses-section {
     padding: 3rem 0;
@@ -1640,6 +1802,12 @@ body {
   .arrow-img img {
     width: 140%;
   }
+  /* 🔥 Bootstrap column reset (MAIN FIX) */
+  .courses-section .col-lg-9 .col-md-3 {
+    flex: 0 0 auto;
+    width: 54%;
+    max-width: 80%;
+  }
 
   /* RIGHT CONTENT */
   .courses-section .col-lg-9 {
@@ -1652,7 +1820,7 @@ body {
   }
   .course-card {
     height: 30rem;
-    width: 17rem;
+    /*width: 17rem;*/
     margin-top: 1.25rem;
     margin-right: 3rem;
   }
@@ -1713,6 +1881,61 @@ body {
 /* Section Fifth */
 
 @media (max-width: 430px) {
+   /* 2️⃣ container ka extra padding hatao */
+  .news-section .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
+
+  /* 3️⃣ row ko reset */
+  .news-section .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    justify-content: center;
+  }
+
+  /* 4️⃣ HAR column full width */
+  .news-section [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    margin: 0 auto;
+  }
+
+  /* 5️⃣ MAIN CULPRIT DESTROY */
+  .featured-news {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 1.5em auto !important;
+    padding: 1em;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+
+  /* 6️⃣ images responsive */
+  .news-card img,
+  .featured-news img {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+  }
+
+  /* 7️⃣ text normal */
+  .news-card,
+  .featured-news {
+    text-align: left;
+  }
+
+  /* 8️⃣ Visit News button center */
+  .styled-link {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 2em auto 0;
+  }
   .news-title {
     font-size: 1.4rem;
     text-align: center;
@@ -1804,6 +2027,7 @@ body {
 }
 
 @media (max-width: 768px) {
+  
   .news-section {
     margin-right: -1%;
   }
@@ -1953,6 +2177,43 @@ body {
     padding: 1rem 3rem;
     font-size: 1.125rem;
     justify-content: center;
+  }
+}
+@media (max-width: 1024px) {
+     /* images responsive */
+  .news-card img,
+  .featured-news img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* left & right cards */
+  .news-card {
+    width: 100%;
+  }
+
+  /* CENTER featured card */
+  .featured-news {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  /* Bootstrap column balance */
+  .news-section .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .news-section .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* Visit news link alignment */
+  .styled-link {
+    margin-top: 3rem;
+    padding: 1rem 0;
   }
 }
 
@@ -2338,12 +2599,27 @@ body {
 }
 
 /* Section Nineth */
-
+@media (max-width: 430px) {
+  .champions-left .text-uppercase {
+    margin-left: 4rem;
+  }
+  .champions-left h2 {
+    margin-left: 5rem;
+  }
+  .champions-left p {
+    margin-left: 4rem;
+  }
+  .champions-left .top-line {
+    margin-left: 11rem;
+  }
+  .champions-left .arrows {
+    margin-left: 3rem;
+  }
+}
 @media (max-width: 375px) {
   .champions-slider {
     overflow-x: auto;
   }
-
   .champion-card {
     min-width: 85vw;
   }
@@ -2359,6 +2635,9 @@ body {
   .champions-left p {
     margin-left: 4rem;
   }
+  .champions-left .top-line {
+    margin-left: 10rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2368,25 +2647,29 @@ body {
     margin-bottom: 20px;
   }
 
-  .top-line {
-    margin-left: auto; /* center the purple line */
-    margin-right: auto;
-    display: block;
+   .champions-left .top-line {
+    margin-left: 3rem; /* center the purple line */
   }
 
   .text-uppercase {
     font-size: 16px;
     margin-top: 20px;
+    margin-left: 3rem;
   }
 
   .champions-left h2 {
     font-size: 24px;
     margin-top: 10px;
+    margin-left: 4rem;
   }
 
   .champions-left p {
     font-size: 16px;
     font-weight: 500;
+    margin-left: 4rem;
+  }
+  .champions-left .arrows {
+    margin-left: 4rem;
   }
 
   /* Arrows */
