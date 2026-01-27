@@ -1095,11 +1095,13 @@ body {
   }
 
   .navbar-nav {
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 1.6%;
   }
   .hero .secondary-menu {
     margin-left: 0;
+    margin-top: 0.5rem;
+
   }
 }
 
@@ -1132,7 +1134,7 @@ body {
     visibility: visible !important;
     width: 100%;
     z-index: 999;
-    margin-top: -30%;
+    margin-top: -40%;
     margin-left: 0%;
   }
    /* Individual buttons full touch-friendly */
@@ -1142,7 +1144,7 @@ body {
     max-width: 10rem;
     text-align: center;
     color: white;
-    padding-right: rem;
+    
   }
 }
 @media (max-width: 375px) {
@@ -1181,9 +1183,6 @@ body {
     /*margin-left: -15%;*/
     margin-left: 0rem;
   }
-  
-  
-
 }
 
 @media (max-width: 768px) {
@@ -1271,10 +1270,13 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .navbar-nav {
+    gap: 2rem;
+  }
   .hero .secondary-menu {
     z-index: 200;
-    top: -8%;
-    right: 8%;
+    margin-top: -1.2rem;
+    margin-right: -9rem;
   }
   .carousel-caption {
     top: 40%;
@@ -1292,6 +1294,10 @@ body {
   }
 }
 @media (max-width: 1024px) {
+  .hero .secondary-menu {
+    margin-top: 0rem;
+    margin-right: -5rem;
+  }
   .carousel-caption {
     top: 50%;
     left: 5%;
@@ -1396,6 +1402,7 @@ body {
 }
 
 /* Section Third */
+
 @media (max-width: 430px) {
  .about-section .btn-purple,
   .about-section a {
@@ -1537,7 +1544,9 @@ body {
   .courses-section {
     padding: 4rem 3vw;
   }
-
+  .left-panel .arrow-btns {
+    margin-left: 0rem;
+  }
   .left-panel h2 {
     font-size: 2.1rem;
   }
@@ -1557,6 +1566,7 @@ body {
   .course-scroll {
     gap: 5rem;
   }
+  
 }
 @media (max-width: 430px) {
     .courses-section .left-panel p {
@@ -1589,6 +1599,7 @@ body {
     overflow-x: auto;
     gap: 0rem;
   }
+  
 
   /* 🔥 Bootstrap column reset (MAIN FIX) */
   .courses-section .col-lg-9 .col-md-3 {
@@ -1805,7 +1816,7 @@ body {
   /* 🔥 Bootstrap column reset (MAIN FIX) */
   .courses-section .col-lg-9 .col-md-3 {
     flex: 0 0 auto;
-    width: 54%;
+    width: 50%;
     max-width: 80%;
   }
 
@@ -1877,7 +1888,11 @@ body {
   .left-panel p {
     text-align: right;
   }
+  .left-panel .arrow-btns {
+    margin-left: 7rem;
+  }
 }
+
 /* Section Fifth */
 
 @media (max-width: 430px) {
@@ -2027,10 +2042,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  
+  /*
   .news-section {
     margin-right: -1%;
-  }
+  }*/
   .news-section {
     padding: 20px 10px;
   }
@@ -2092,16 +2107,9 @@ body {
     padding: 12px 40px;
     margin-top: 25px;
   }
-}
-@media (max-width: 768px) {
-  .news-section .row > div {
-    width: 100%;
-  }
 
-  .news-section .row > div:has(.styled-link) {
-    order: 99;
-  }
 }
+
 @media (min-width: 1024px) {
   /* 1024px */
 
@@ -2803,13 +2811,18 @@ body {
     margin-left: 20rem;
   }
   .arrows {
-    margin-left: 18rem;
+    margin-left: 20rem;
     margin-bottom: 2rem;
   }
 }
 
 /* Section Tenth */
 
+@media (max-width: 1366px) {
+  .explore-title {
+    text-align: right;
+  }
+}
 @media (max-width: 430px) {
   .career-link {
     margin-left: 7%;
@@ -3028,6 +3041,16 @@ body {
   font-weight: 900;
 }
 
+h2 a {
+  color: inherit;          /* heading ka hi color */
+  text-decoration: none;  /* underline hatao */
+}
+
+p a {
+  color: inherit;        /* ya inherit */
+  text-decoration: none;
+}
+
 .tagline {
   font-size: 0.85rem;
   letter-spacing: 0.05rem;
@@ -3094,3 +3117,196 @@ body {
     max-width: 34rem;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 26.875rem) {   /* 430px */
+
+  /* Hero navbar normal flow me */
+  .secondary-menu {
+    position: static !important;
+  }
+
+  /* Hamburger ko upar lana */
+  .secondary-menu .navbar-toggler {
+    position: absolute;
+    top: -6.9rem;          /* logo ke level pe */
+    right: 4.2rem;        /* search icon ke bagal me */
+    z-index: 10;
+  }
+
+  /* Black hamburger icon */
+  .secondary-menu .navbar-toggler-icon {
+    background-image: none;
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #000;
+    position: relative;
+  }
+
+  .secondary-menu .navbar-toggler-icon::before,
+  .secondary-menu .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #000;
+    left: 0;
+  }
+
+  .secondary-menu .navbar-toggler-icon::before {
+    top: -0.45rem;
+  }
+
+  .secondary-menu .navbar-toggler-icon::after {
+    top: 0.45rem;
+  }
+
+}
+
+@media (max-width: 26.875rem) {
+
+  /* Secondary navbar ki height & background remove */
+  .secondary-menu {
+    background: transparent !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  /* Container-fluid ka extra space hatao */
+  .secondary-menu .container-fluid {
+    padding: 0 !important;
+    min-height: 0 !important;
+  }
+
+  /* Navbar toggler ke alawa sab hide */
+  .secondary-menu .navbar-collapse {
+    background: #fff;   /* menu open hone par white */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {   
+
+  /* Hero navbar normal flow me */
+  .secondary-menu {
+    position: static !important;
+  }
+
+  /* Hamburger ko upar lana */
+  .secondary-menu .navbar-toggler {
+    position: absolute;
+   /* top: -7.2rem; */          /* logo ke level pe */
+   /* right: 12rem; */        /* search icon ke bagal me */
+    z-index: 10;
+  }
+
+  /* Black hamburger icon */
+  .secondary-menu .navbar-toggler-icon {
+    background-image: none;
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #000;
+    position: relative;
+  }
+
+  .secondary-menu .navbar-toggler-icon::before,
+  .secondary-menu .navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #000;
+    left: 0;
+  }
+
+  .secondary-menu .navbar-toggler-icon::before {
+    top: -0.45rem;
+  }
+
+  .secondary-menu .navbar-toggler-icon::after {
+    top: 0.45rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  /* Secondary navbar ki height & background remove */
+  .secondary-menu {
+    background: transparent !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 !important;
+  }
+
+  /* Container-fluid ka extra space hatao */
+  .secondary-menu .container-fluid {
+    padding: 0 !important;
+    min-height: 0 !important;
+  }
+
+  /* Navbar toggler ke alawa sab hide */
+  .secondary-menu .navbar-collapse {
+    background: #fff;   /* menu open hone par white */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
