@@ -63,8 +63,8 @@ body {
 }
 .hero .secondary-menu {
   z-index: 200;
-  right: 20%;
-  top: -5%;
+  /*right: 20%;
+  top: -5%;*/
 }
 
 /* Carousel */
@@ -1070,6 +1070,41 @@ body {
 
 /* Section First */
 
+@media (min-width: 1366px) {
+  .hero {
+    position: relative;
+  }
+  .hero .secondary-menu {
+    position: absolute;
+    top: -8rem; /* px nahi */
+    right: 28%;
+    z-index: 10;
+  }
+  .nav-brand img {
+    width: 8.75rem;
+    position: relative;
+  }
+  .carousel-item img {
+    height: 90vh; /* 100vh nahi */
+  }
+  .carousel-caption {
+    top: 45%;
+    margin-right: 20%;
+    text-align: right;
+  }
+
+  .carousel-caption h5 {
+    font-size: 3rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+  .btn {
+    margin-left: 6vw;
+  }
+}
+
 @media (max-width: 1366px) {
   .border-cs {
     flex-direction: row;
@@ -1099,9 +1134,8 @@ body {
     margin-bottom: 1.6%;
   }
   .hero .secondary-menu {
-    margin-left: 0;
-    margin-top: 0.5rem;
-
+    right: 14rem;
+    top: -2rem;
   }
 }
 
@@ -1137,14 +1171,13 @@ body {
     margin-top: -40%;
     margin-left: 0%;
   }
-   /* Individual buttons full touch-friendly */
+  /* Individual buttons full touch-friendly */
   .carousel-caption a,
   .carousel-caption button {
     width: 100%;
     max-width: 10rem;
     text-align: center;
     color: white;
-    
   }
 }
 @media (max-width: 375px) {
@@ -1240,14 +1273,13 @@ body {
   }
 
   /* Buttons */
-   /* Individual buttons full touch-friendly */
+  /* Individual buttons full touch-friendly */
   .carousel-caption a,
   .carousel-caption button {
     width: 100%;
     max-width: 15rem;
     text-align: center;
     color: white;
-    
   }
 
   .underline-btn {
@@ -1295,8 +1327,8 @@ body {
 }
 @media (max-width: 1024px) {
   .hero .secondary-menu {
-    margin-top: 0rem;
-    margin-right: -5rem;
+    top: -3.5rem;
+    right: 6rem;
   }
   .carousel-caption {
     top: 50%;
@@ -1324,10 +1356,76 @@ body {
     padding-left: 1rem;
     padding-right: 2rem;
   }
- 
 }
 
 /* Section Second */
+
+@media (min-width: 1366px) {
+  /* Section spacing */
+  .olcd-section {
+    padding-block: 5rem;
+    padding-inline: 8vw;
+  }
+
+  /* Top text */
+  .section-text {
+    max-width: 55rem;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .section-underline {
+    width: 4rem;
+    height: 0.35rem;
+    margin-top: 0.75rem;
+  }
+
+  /* Cards layout */
+  .info-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-inline: auto;
+    border-radius: 0.75rem;
+  }
+
+  .row.g-4 {
+    row-gap: 3rem;
+  }
+
+  /* Card overlay */
+  .card-overlay {
+    padding: 2rem;
+  }
+
+  .card-overlay h5 {
+    font-size: 1.9rem;
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-overlay p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+
+  /* Text weight balance */
+  .first {
+    font-weight: 400;
+    letter-spacing: 0.02em;
+  }
+
+  .second {
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  /* Hover refinement */
+  .info-card:hover img {
+    transform: scale(1.08);
+  }
+}
 
 @media (max-width: 1366px) {
   .olcd-section {
@@ -1404,13 +1502,11 @@ body {
 /* Section Third */
 
 @media (max-width: 430px) {
- .about-section .btn-purple,
+  .about-section .btn-purple,
   .about-section a {
     display: block;
-    margin-left: auto;
     text-align: center;
-    margin-left: 3rem;
-    margin-right: 2rem;
+    margin-right: 0rem;
   }
   .hex-main-wrapper {
     width: 100%;
@@ -1445,10 +1541,8 @@ body {
   .about-section .btn-purple,
   .about-section a {
     display: block;
-    margin-left: auto;
     text-align: center;
-    margin-left: 2rem;
-    margin-right: 1rem;
+    margin-right: 0rem;
   }
 }
 
@@ -1540,6 +1634,12 @@ body {
 
 /* Section Fourth */
 
+@media (min-width: 1366px) {
+  .left-panel .arrow-btns {
+    margin-left: 0rem;
+  }
+}
+
 @media (max-width: 1366px) {
   .courses-section {
     padding: 4rem 3vw;
@@ -1566,67 +1666,14 @@ body {
   .course-scroll {
     gap: 5rem;
   }
-  
 }
 @media (max-width: 430px) {
-    .courses-section .left-panel p {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-    /* ✅ Sirf outer layout vertical */
-  .courses-section > .container-fluid > .row {
-    flex-direction: column;
-  }
-
-  /* Left panel */
-  .courses-section .left-panel {
-    width: 100%;
-    max-width: 100%;
-    padding: 2.5rem 1.5rem;
-  }
-
-  /* Right panel */
-  .courses-section .col-lg-9 {
-    width: 100%;
-    max-width: 100%;
-  }
-
-  /* 🔥 Cards row – horizontal scroll */
-  .courses-section .col-lg-9 .row {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 0rem;
-  }
-  
-
-  /* 🔥 Bootstrap column reset (MAIN FIX) */
-  .courses-section .col-lg-9 .col-md-3 {
-    flex: 0 0 auto;
-    width: 85%;
-    max-width: 100%;
-  }
-
-  /* Card height normal */
-  .course-card {
-    height: auto;
-  }
- .courses-section .see-more-btn {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-}
-@media (max-width: 375px) {
-
   .courses-section .left-panel p {
     text-align: center;
     margin: 0 auto;
   }
 
-    /* ✅ Sirf outer layout vertical */
+  /* ✅ Sirf outer layout vertical */
   .courses-section > .container-fluid > .row {
     flex-direction: column;
   }
@@ -1663,7 +1710,61 @@ body {
   .course-card {
     height: auto;
   }
- .courses-section .see-more-btn {
+  .courses-section .see-more-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .left-panel button {
+    margin-left: -3rem;
+    margin-right: 4rem;
+  }
+}
+@media (max-width: 375px) {
+  .courses-section .left-panel p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  /* ✅ Sirf outer layout vertical */
+  .courses-section > .container-fluid > .row {
+    flex-direction: column;
+  }
+
+  /* Left panel */
+  .courses-section .left-panel {
+    width: 100%;
+    max-width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  /* Right panel */
+  .courses-section .col-lg-9 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* 🔥 Cards row – horizontal scroll */
+  .courses-section .col-lg-9 .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0rem;
+  }
+
+  /* 🔥 Bootstrap column reset (MAIN FIX) */
+  .courses-section .col-lg-9 .col-md-3 {
+    flex: 0 0 auto;
+    width: 85%;
+    max-width: 100%;
+  }
+
+  /* Card height normal */
+  .course-card {
+    height: auto;
+  }
+  .courses-section .see-more-btn {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -1760,9 +1861,8 @@ body {
   }
 }
 @media (min-width: 1024px) {
-
   .courses-section .row {
-    gap: 0rem;   /* cards ke beech gap */
+    gap: 0rem; /* cards ke beech gap */
   }
   /* SECTION */
   .courses-section {
@@ -1896,7 +1996,7 @@ body {
 /* Section Fifth */
 
 @media (max-width: 430px) {
-   /* 2️⃣ container ka extra padding hatao */
+  /* 2️⃣ container ka extra padding hatao */
   .news-section .container {
     padding-left: 0;
     padding-right: 0;
@@ -2107,7 +2207,6 @@ body {
     padding: 12px 40px;
     margin-top: 25px;
   }
-
 }
 
 @media (min-width: 1024px) {
@@ -2188,7 +2287,7 @@ body {
   }
 }
 @media (max-width: 1024px) {
-     /* images responsive */
+  /* images responsive */
   .news-card img,
   .featured-news img {
     width: 100%;
@@ -2655,7 +2754,7 @@ body {
     margin-bottom: 20px;
   }
 
-   .champions-left .top-line {
+  .champions-left .top-line {
     margin-left: 3rem; /* center the purple line */
   }
 
@@ -3042,12 +3141,12 @@ body {
 }
 
 h2 a {
-  color: inherit;          /* heading ka hi color */
-  text-decoration: none;  /* underline hatao */
+  color: inherit; /* heading ka hi color */
+  text-decoration: none; /* underline hatao */
 }
 
 p a {
-  color: inherit;        /* ya inherit */
+  color: inherit; /* ya inherit */
   text-decoration: none;
 }
 
@@ -3118,34 +3217,8 @@ p a {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 26.875rem) {   /* 430px */
+@media (max-width: 26.875rem) {
+  /* 430px */
 
   /* Hero navbar normal flow me */
   .secondary-menu {
@@ -3155,8 +3228,8 @@ p a {
   /* Hamburger ko upar lana */
   .secondary-menu .navbar-toggler {
     position: absolute;
-    top: -6.9rem;          /* logo ke level pe */
-    right: 4.2rem;        /* search icon ke bagal me */
+    top: -6.9rem; /* logo ke level pe */
+    right: 4.2rem; /* search icon ke bagal me */
     z-index: 10;
   }
 
@@ -3186,11 +3259,9 @@ p a {
   .secondary-menu .navbar-toggler-icon::after {
     top: 0.45rem;
   }
-
 }
 
 @media (max-width: 26.875rem) {
-
   /* Secondary navbar ki height & background remove */
   .secondary-menu {
     background: transparent !important;
@@ -3207,22 +3278,11 @@ p a {
 
   /* Navbar toggler ke alawa sab hide */
   .secondary-menu .navbar-collapse {
-    background: #fff;   /* menu open hone par white */
+    background: #fff; /* menu open hone par white */
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {   
-
+@media (max-width: 768px) {
   /* Hero navbar normal flow me */
   .secondary-menu {
     position: static !important;
@@ -3231,8 +3291,8 @@ p a {
   /* Hamburger ko upar lana */
   .secondary-menu .navbar-toggler {
     position: absolute;
-   /* top: -7.2rem; */          /* logo ke level pe */
-   /* right: 12rem; */        /* search icon ke bagal me */
+    /* top: -7.2rem; */ /* logo ke level pe */
+    /* right: 12rem; */ /* search icon ke bagal me */
     z-index: 10;
   }
 
@@ -3262,11 +3322,9 @@ p a {
   .secondary-menu .navbar-toggler-icon::after {
     top: 0.45rem;
   }
-
 }
 
 @media (max-width: 768px) {
-
   /* Secondary navbar ki height & background remove */
   .secondary-menu {
     background: transparent !important;
@@ -3283,30 +3341,92 @@ p a {
 
   /* Navbar toggler ke alawa sab hide */
   .secondary-menu .navbar-collapse {
-    background: #fff;   /* menu open hone par white */
+    background: #fff; /* menu open hone par white */
   }
 }
 
+/* =========================
+   PAGE LOAD CURTAIN (TWO PANELS)
+   ========================= */
+.curtain-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  pointer-events: auto;
+  display: flex;
+  justify-content: space-between;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+}
 
+.curtain-panel {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.45);
+  transform-origin: center left;
+}
 
+.curtain-panel.right {
+  transform-origin: center right;
+}
 
+.curtain-panel.left {
+  background-image: url("../images/curtain-left.png");
+}
 
+.curtain-panel.right {
+  background-image: url("../images/curtain-right.png");
+}
 
+.curtain-wrapper.curtain-open {
+  animation: curtain-wrapper-fade 2.6s ease-in-out forwards;
+}
 
+.curtain-panel.left.curtain-open {
+  animation: curtain-left-open 2.6s ease-in-out forwards;
+}
 
+.curtain-panel.right.curtain-open {
+  animation: curtain-right-open 2.6s ease-in-out forwards;
+}
+@keyframes curtain-left-open {
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  60% {
+    transform: translateX(-5%) rotateY(-6deg);
+  }
+  100% {
+    transform: translateX(-100%) rotateY(-12deg);
+  }
+}
 
+@keyframes curtain-right-open {
+  0% {
+    transform: translateX(0) rotateY(0deg);
+  }
+  60% {
+    transform: translateX(5%) rotateY(6deg);
+  }
+  100% {
+    transform: translateX(100%) rotateY(12deg);
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes curtain-wrapper-fade {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  85% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
