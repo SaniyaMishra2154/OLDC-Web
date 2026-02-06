@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== Section First =========== */
+
+.d-flex.align-items-start.justify-content-between.border-cs {
+  margin-right: -35rem;
+  margin-left: -1.2rem;
+}
+
+.d-flex.my-2.my-lg-0.align-items-center.justify-content-end.right-brand {
+  margin-right: -39rem;
+}
+
+.event-hero {
+  inline-size: 100%;
+  background: #f5f5f5;
+}
+
+.event-hero-inner {
+  position: relative;
+  inline-size: 100%;
+  max-inline-size: 90%;
+  margin-inline: auto;
+}
+
+.event-hero-img {
+  inline-size: 100%;
+  block-size: auto;
+  display: block;
+  border-radius: 0.4rem;
+}
+
+/* ---------- BREAKPOINTS ---------- */
+
+/* PHONES */
+@media (max-width: 37.5em) {
+  .event-hero-inner {
+    max-inline-size: 100%;
+  }
+}
+
+/* TABLETS */
+@media (min-width: 48em) {
+}
+
+/* LAPTOPS */
+@media (min-width: 62em) {
+}
+
+/* LARGE SCREENS */
+@media (min-width: 75em) {
+  .event-hero-inner {
+    max-inline-size: 100%;
+  }
+}
+
+/* ========== Section Second =========== */
+.event-page {
+  font-family: serif;
+  background: #fff;
+}
+
+/* HERO */
+.event-hero img {
+  inline-size: 100%;
+  block-size: auto;
+  display: block;
+}
+
+/* LAYOUT */
+.event-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  max-inline-size: 85%;
+  margin-inline: auto;
+  padding-block: 3rem;
+}
+
+/* LEFT CONTENT */
+.event-header {
+  display: flex;
+  gap: 2rem;
+}
+
+/* DATE */
+.event-date {
+  text-align: center;
+}
+
+.event-date .month {
+  font-size: 1.2rem;
+  color: #4d4949;
+}
+
+.event-date .day {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.event-title-wrap h1 {
+  font-size: 2rem;
+  margin-block-end: 0.5rem;
+  margin-left: 3rem;
+}
+
+.event-title-wrap p {
+  font-size: 1rem;
+  color: #444;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin-block-end: 1rem;
+  margin-left: 11rem;
+}
+
+.event-timeline li {
+  margin-block-end: 1rem;
+  font-size: 1rem;
+  margin-left: 11rem;
+  border-bottom: 0.1rem solid #96919133;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.event-timeline {
+  list-style-type: none;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p.free {
+  margin-left: 13rem;
+  margin-top: 2rem;
+}
+
+.event-desc {
+  font-size: 1rem;
+  margin-block-end: 1rem;
+  margin-left: 11rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.event-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-block-start: 4rem;
+  font-size: 1.3rem;
+  margin-right: -30rem;
+  margin-left: 11rem;
+}
+
+/* SIDEBAR */
+.event-sidebar {
+  background: #5a0b7a;
+  color: #fff;
+  padding: 2rem;
+  height: 50%;
+  width: 90%;
+  margin-top: -13rem;
+  position: relative;
+  margin-left: 7rem;
+}
+
+.event-sidebar h3 {
+  margin-block-end: 2.8rem;
+  font-size: 2.5rem;
+}
+
+.event-sidebar p strong {
+  font-size: 1.2rem;
+  margin-block-end: 1rem;
+  color: #fff;
+}
+
+.event-sidebar p {
+  font-size: 1.2rem;
+  margin-block-end: 1.5rem;
+  font-weight: 500;
+  color: #c9c1c1;
+  border-bottom: 0.1rem solid #ffffff33;
+}
+
+.sidebar-links a {
+  display: block;
+  color: #00000099;
+  margin-top: 8rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 0.2rem solid #00000099;
+  margin-bottom: -6rem;
+}
+
+.sidebar-links a:hover {
+  color: #5a0b7a;
+  border-bottom: 0.2rem solid #5a0b7a;
+}
+
+.sidebar-links img {
+  margin-left: 10.5rem;
+}
+
+.sidebar-links .pdf-arrow {
+  margin-left: 13rem;
+}
+
+.sidebar-links img:hover {
+  background-color: #b65fd8;
+  color: white;
+  border-radius: 50%;
+}
+/* -------- RESPONSIVE -------- */
+
+/* phones */
+@media (max-width: 37.5em) {
+  .event-container {
+    grid-template-columns: 1fr;
+    max-inline-size: 95%;
+  }
+
+  .event-header {
+    flex-direction: column;
+  }
+
+  .event-nav {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* tablets */
+@media (min-width: 48em) {
+  .event-container {
+    max-inline-size: 90%;
+  }
+}
+
+/* laptops */
+@media (min-width: 62em) {
+  .event-container {
+    max-inline-size: 85%;
+  }
+}
+
+/* large */
+@media (min-width: 75em) {
+  .event-container {
+    max-inline-size: 80%;
+  }
+}
