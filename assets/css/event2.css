@@ -62,20 +62,61 @@ body {
   .event-hero-inner {
     max-inline-size: 100%;
   }
+  .d-flex.align-items-start.justify-content-between.border-cs {
+    margin-right: 2rem;
+    margin-left: -2rem;
+  }
+  .right-brand .logo-icon {
+    margin-right: 39rem;
+  }
 }
 
 /* TABLETS */
 @media (min-width: 48em) {
+  .event-hero-inner {
+    max-inline-size: 100%;
+  }
+  .d-flex.align-items-start.justify-content-between.border-cs {
+    margin-right: 0rem;
+  }
+  .right-brand .logo-icon {
+    margin-right: 39rem;
+  }
 }
 
 /* LAPTOPS */
 @media (min-width: 62em) {
+  .d-flex.align-items-start.justify-content-between.border-cs {
+    margin-right: -6rem;
+  }
+  .right-brand .logo-icon {
+    margin-right: 38rem;
+  }
+  .event-hero-inner {
+    max-inline-size: 100%;
+  }
 }
 
 /* LARGE SCREENS */
 @media (min-width: 75em) {
   .event-hero-inner {
     max-inline-size: 100%;
+  }
+  .d-flex.align-items-start.justify-content-between.border-cs {
+    margin-right: -6rem;
+  }
+  .right-brand .logo-icon {
+    margin-right: 38rem;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1700px) {
+  .d-flex.align-items-start.justify-content-between.border-cs {
+    margin-right: -33rem;
+  }
+  .right-brand .logo-icon {
+    margin-right: 7rem;
   }
 }
 
@@ -269,11 +310,53 @@ p.free {
   .event-container {
     max-inline-size: 85%;
   }
+  .event-nav {
+    margin-right: 6rem;
+  }
 }
 
 /* large */
 @media (min-width: 75em) {
   .event-container {
-    max-inline-size: 80%;
+    max-inline-size: 99%;
+  }
+  .event-sidebar {
+    margin-left: -11.5rem;
+    width: 200%;
+  }
+  .sidebar-links img {
+    margin-left: 7rem;
+  }
+
+  .sidebar-links .pdf-arrow {
+    margin-left: 9.3rem;
+  }
+  .event-nav {
+    margin-right: 0rem;
+  }
+}
+/* LARGE SCREENS */
+@media (min-width: 1700px) {
+  .event-sidebar {
+    height: 50%;
+    width: 90%;
+    margin-left: 7rem;
+  }
+  .sidebar-links img {
+    margin-left: 15.5rem;
+  }
+
+  .sidebar-links .pdf-arrow {
+    margin-left: 18rem;
+  }
+  .event-container {
+    max-inline-size: 85%;
+  }
+  .sidebar-links a {
+    margin-top: 8rem;
+    margin-bottom: -6rem;
+  }
+  .event-nav {
+    margin-right: -34rem;
   }
 }
