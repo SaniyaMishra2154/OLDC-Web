@@ -26,6 +26,7 @@ body {
 }
 
 /* ========== Section First =========== */
+
 .news-detail {
   display: grid;
   grid-template-columns: 65% 35%;

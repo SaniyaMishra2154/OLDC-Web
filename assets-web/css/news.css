@@ -35,6 +35,9 @@ body {
 .d-flex.align-items-start.justify-content-between.border-cs {
   margin-right: -33rem;
 }
+ul.navbar-nav.me-auto.mt-2.mt-lg-0.top-list {
+  margin-left: 1rem;
+}
 .nav-brand img {
   width: 140px;
   position: absolute;
@@ -71,7 +74,7 @@ body {
 .news-hero {
   position: relative;
   min-height: 90vh;
-  background: url("../Images/Frame 427324776.png") center / cover no-repeat;
+  background: url("../images/Frame 427324776.png") center / cover no-repeat;
   display: flex;
   align-items: center;
   padding: 3rem;

@@ -190,6 +190,9 @@ body {
     top: -2rem;
     right: 18rem;
   }
+  .d-flex.my-2.my-lg-0.align-items-center.justify-content-end.right-brand {
+    margin-right: -39rem;
+  }
 }
 /* ========== Section Second =========== */
 /* BREADCRUMB WRAPPER */

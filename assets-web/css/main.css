@@ -49,16 +49,16 @@ body {
   background: #4f0071;
   color: #fff;
 }
-.right-brand img {
+.right-brand1 img {
   margin-left: 5px;
 }
-.right-brand span {
+.right-brand1 span {
   font-weight: 600;
 }
-.right-brand .logo-icon {
+.right-brand1 .logo-icon {
   width: 150px;
 }
-.border-cs {
+.border-cs1 {
   border-top: solid 1px #4f0071;
 }
 .hero .secondary-menu {
@@ -66,7 +66,19 @@ body {
   /*right: 20%;
   top: -5%;*/
 }
-
+.d-flex.align-items-start.justify-content-between.border-cs1 {
+  margin-right: -17rem;
+  margin-left: -17rem;
+}
+ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
+  margin-left: -18rem;
+}
+.d-flex.my-2.my-lg-0.align-items-center.justify-content-end.right-brand1 {
+  margin-right: -17rem;
+}
+.d-flex.align-items-start.justify-content-between.border-cs {
+  margin-right: -17rem;
+}
 /* Carousel */
 .carousel-control-next img,
 .carousel-control-prev img {
@@ -736,6 +748,7 @@ body {
   width: 34px;
   cursor: pointer;
 }
+
 .more-events {
   margin-top: 30px;
   padding-top: 15px;
