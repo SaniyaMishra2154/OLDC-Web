@@ -94,6 +94,16 @@ nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
   }
 }
 
+/*Large Screens – 1200px*/
+@media (min-width: 75em) {
+  .asdu-title h1 {
+    margin-left: 1rem;
+  }
+  .asdu-description p {
+    margin-right: 11rem;
+  }
+}
+
 /*---------- Section Second ----------*/
 
 .asdu-section {
@@ -210,4 +220,303 @@ nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
   line-height: 1.6;
   color: #555555;
   text-align: center;
+}
+/*Phones – 600px*/
+@media (max-width: 37.5em) {
+  .asdu-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .asdu-top {
+    padding: 1.2rem;
+  }
+}
+
+/*Tablets – 768px*/
+@media (max-width: 48em) {
+  .asdu-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*Laptops – 992px*/
+@media (min-width: 62em) {
+  .asdu-wrapper {
+    max-width: 85%;
+  }
+}
+
+/*Large Screens – 1200px*/
+@media (min-width: 75em) {
+  .asdu-wrapper {
+    max-width: 90%;
+  }
+}
+
+/*---------- Section Fourth ----------*/
+.focus-section {
+  padding: 4rem 2rem;
+  width: 100%;
+}
+.bar1 {
+  width: 0.3rem;
+  height: 2rem;
+  background: #6a1bb1;
+  margin-right: 1rem;
+  margin-left: 10rem;
+}
+
+.container-focus {
+  width: 95%;
+  margin: 0 auto;
+}
+.Browse-header1 {
+  padding: 1.5rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.browse-header1 h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* Cards Layout */
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+
+.focus-card {
+  background: #ffffff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-top {
+  padding: 1.5rem;
+  text-align: center;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.card-top h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.bg-blue {
+  background: #e3f0f2;
+}
+
+.bg-beige {
+  background: #f1ede6;
+}
+
+.card-image img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 1rem;
+}
+/* Large devices - 1200px */
+@media (max-width: 75em) {
+  .card-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Laptops - 992px */
+@media (max-width: 62em) {
+  .card-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablets - 768px */
+@media (max-width: 48em) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phones - 600px */
+@media (max-width: 37.5em) {
+  .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    padding: 1rem;
+  }
+
+  .card-top {
+    min-height: auto;
+  }
+}
+
+/*---------- Section Fifth ----------*/
+.alignment-section {
+  padding: 2rem 2rem;
+  background: #eeeeee;
+}
+
+.container-alignment {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 75rem;
+}
+
+.alignment-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+/* Left Content */
+
+.alignment-content {
+  flex: 1;
+  margin-left: -14rem;
+  margin-top: 12rem;
+}
+
+.alignment-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.alignment-content h2 span {
+  color: #0aa38f;
+  text-decoration: underline;
+}
+
+.alignment-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 32rem;
+}
+
+/* Cards */
+
+.alignment-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-right: -10rem;
+}
+
+.card-align {
+  background: #ffffff;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.card-align .icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #d4a017;
+}
+
+.card-align p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  width: 70%;
+}
+/* Large - 1200px */
+@media (max-width: 75em) {
+  .container-alignment {
+    width: 95%;
+  }
+}
+
+/* Laptops - 992px */
+@media (max-width: 62em) {
+  .alignment-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .alignment-content p {
+    max-width: 100%;
+  }
+
+  .alignment-cards {
+    width: 100%;
+  }
+}
+
+/* Tablets - 768px */
+@media (max-width: 48em) {
+  .alignment-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .alignment-section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+/* Phones - 600px */
+@media (max-width: 37.5em) {
+  .alignment-section {
+    padding: 3rem 1rem;
+  }
+
+  .alignment-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .card-align {
+    padding: 1.5rem;
+  }
+}
+
+/*---------- Section Sixth ----------*/
+.champions-left h2 {
+  color: #6a1bb1;
+  font-weight: 700;
+}
+
+/*---------- Section Sixth ----------*/
+.press-media {
+  min-height: 50vh;
+}
+
+.press-link {
+  color: black;
+}
+
+.press-link strong {
+  color: #0aa38f;
+}
+
+.press-link .arrow {
+  background-color: #0aa38f;
+}
+/* Large - 1200px */
+@media (max-width: 75em) {
+  .press-link .arrow {
+    margin-left: 1rem;
+  }
 }
