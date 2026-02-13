@@ -1118,7 +1118,7 @@ body {
 /*---------- Section Sixth ----------*/
 /* SECTION */
 .press-media {
-  min-height: 80vh;
+  min-height: 50vh;
   background: url("../images/media\ page.png") center / cover no-repeat;
   display: flex;
   align-items: center;
