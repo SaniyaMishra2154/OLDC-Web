@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------- Section First ----------*/
+.event-hero-img  {
+    width: 100%;
+}
+h2 {
+    margin-left: 13rem;
+    font-size: 7rem;
+    margin-top: -9rem;
+    color: white;
+    font-weight: 800;
+}
+h2 strong {
+    color: #DEB04C;
+}
+
+/*---------- Section Second ----------*/
+
+/* SECTION */
+.etm-section {
+  padding: 4rem 0;
+   background: #f2f2f2;
+}
+
+.etm-container {
+  width: 90%;
+  max-width: 75rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+/* IMAGE SECTION */
+.image-wrapper {
+  position: relative;
+  width: 50%;
+  min-height: 25rem;
+}
+
+.img-box {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Left Large Image */
+.img-left {
+  width: 70%;
+  height: 28rem;
+  left: 0;
+  top: 0;
+}
+
+/* Right Smaller Image */
+.img-right {
+  width: 60%;
+  height: 24rem;
+  right: 0;
+  bottom: -3rem;
+}
+
+/* CONTENT */
+.content {
+  width: 50%;
+ 
+}
+
+.content h2 {
+  font-size: 2rem;
+ margin: auto;
+  font-weight: 700;
+  color: #000;
+}
+
+.content h2 span {
+  color: #5a1e78;
+  text-decoration: underline;
+}
+
+.content p {
+  line-height: 1.6;
+  color: #555;
+  font-size: 1.3rem;
+  margin-bottom: -4rem;
+  margin-top: 1rem;
+}
+
+/* ============================= */
+/* 📱 PHONES (max 600px) */
+/* ============================= */
+@media (max-width: 37.5em) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    min-height: 22rem;
+  }
+
+  .img-left,
+  .img-right {
+    position: relative;
+    width: 100%;
+    height: 18rem;
+    bottom: 0;
+  }
+
+  .img-right {
+    margin-top: 1rem;
+  }
+
+  .content {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+/* ============================= */
+/* 📲 TABLETS (max 768px) */
+/* ============================= */
+@media (max-width: 48em) {
+  .container {
+    gap: 2rem;
+  }
+
+  .content h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ============================= */
+/* 💻 LAPTOPS (max 992px) */
+/* ============================= */
+@media (max-width: 62em) {
+  .img-left {
+    height: 24rem;
+  }
+
+  .img-right {
+    height: 20rem;
+  }
+}
+
+/* ============================= */
+/* 🖥 LARGE (max 1200px) */
+/* ============================= */
+@media (max-width: 75em) {
+  .container {
+    width: 95%;
+  }
+}
+
+/*---------- Section Third ----------*/
+.benefit-section {
+  padding: 2rem 0;
+}
+
+.benefit-container {
+  width: 90%;
+  max-width: 75rem;
+  margin: auto;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.left-heading h2 {
+  font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: black;
+     margin-top: 0rem;
+    margin-left: -9rem;
+}
+
+.left-heading span {
+    color: #DEB04C;
+}
+
+.right-text {
+  width: 62%;
+  margin-right: -15rem;
+}
+
+.right-text p {
+  color: #444;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Purple Line */
+.divider {
+ height: 0.3rem;
+ width: 140%;
+ background: #7a2b91;
+ margin: 2rem 0 3rem 0;
+ margin-left: -14.5rem;
+}
+
+.benefits-grid {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+    margin-left: -12rem;
+    margin-right: -15rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+ width: 2.5rem;
+    height: 2.5rem;
+    background: #c58a1e;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.benefit-item p {
+ color: #333;
+    line-height: 1.6;
+    font-size: 1.3rem;
+}
+
+/* ================== RESPONSIVE ================== */
+
+/* 📱 PHONES (600px) */
+@media (max-width: 37.5em) {
+  .top-row {
+    flex-direction: column;
+  }
+
+  .right-text {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 📲 TABLETS (768px) */
+@media (max-width: 48em) {
+  .left-heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .top-row {
+    gap: 2rem;
+  }
+}
+
+/* 💻 LAPTOPS (992px) */
+@media (max-width: 62em) {
+  .container {
+    width: 95%;
+  }
+}
+
+/* 🖥 LARGE (1200px) */
+@media (max-width: 75em) {
+  .container {
+    max-width: 68rem;
+  }
+}
+
+/*---------- Section Fourth ----------*/
+
+/* SECTION */
+.produce-section {
+  background: #f5f5f5;
+  padding: 2rem 0;
+}
+
+.produce-container {
+     width: 90%;
+    max-width: 90%;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+/* TITLE */
+.section-title1 {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #333333CC;
+  border-bottom: 0.1rem solid #ccc;
+  padding-bottom: 0.5rem;
+  margin-left: 0rem;
+}
+
+/* GRID */
+.card-grids {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* CARD */
+.produce-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.3rem;
+}
+
+.produce-card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  display: block;
+}
+
+/* OVERLAY TEXT */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.overlay p {
+      color: #fff;
+    font-size: 1.7rem;
+    line-height: 1.4;
+    margin-top: 13rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* 📱 PHONES (600px) */
+@media (max-width: 37.5em) {
+  .card-grids {
+    grid-template-columns: 1fr;
+  }
+
+  .produce-card img {
+    height: 16rem;
+  }
+}
+
+/* 📲 TABLETS (768px) */
+@media (max-width: 48em) {
+  .card-grids {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 💻 LAPTOPS (992px) */
+@media (max-width: 62em) {
+  .card-grids {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 🖥 LARGE (1200px) */
+@media (max-width: 75em) {
+  .produce-container {
+    width: 95%;
+  }
+}
