@@ -62,7 +62,8 @@ body {
 .colradio-hero h1 {
   font-size: 8rem;
   color: #444;
-  width: 102%;
+  width: 109%;
+  font-weight: 800;
 }
 
 .col-tagline {
@@ -71,7 +72,7 @@ body {
   margin-bottom: 2rem;
   margin-left: 1rem;
   width: 95%;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 .col-desc {
@@ -206,5 +207,345 @@ body {
 
   .who h2 {
     font-size: 1.8rem;
+  }
+}
+
+/*---------- Section Second ----------*/
+
+/* SECTION */
+
+.audience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 6vw;
+}
+
+/* GRID */
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  max-width: 80rem;
+}
+
+/* CARD */
+
+.audience-card {
+  width: 100%;
+  border: none;
+}
+
+.num {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #e9e2f0;
+  color: #5c0a7a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.audience-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.audience-card p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
+
+/* SIDE ARROW BLOCK */
+
+.side-arrow {
+  width: 6rem;
+  height: 12rem;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ARROW CSS */
+
+.arrow {
+  font-size: 5rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  color: white;
+  transform: rotate(-45deg);
+}
+
+/* ================= */
+/* RESPONSIVE */
+/* ================= */
+
+/* ≤1024px */
+
+@media (max-width: 64em) {
+  .audience-grid {
+    gap: 2rem;
+  }
+}
+
+/* ≤768px */
+
+@media (max-width: 48em) {
+  .audience {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .side-arrow {
+    margin-top: 2rem;
+    width: 100%;
+    height: 4rem;
+  }
+}
+
+/* ≤368px */
+
+@media (max-width: 23em) {
+  .audience {
+    padding: 3rem 1.5rem;
+  }
+
+  .audience-card h3 {
+    font-size: 1rem;
+  }
+
+  .audience-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/*---------- Section Third ----------*/
+
+/* SECTION */
+
+.highlights {
+  display: flex;
+  padding: 3rem 6vw;
+  text-align: center;
+}
+
+/* LEFT */
+
+.left {
+  max-width: 20%;
+  margin-top: 5rem;
+}
+
+.label {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+.label::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 0.2rem;
+  background: #c40000;
+  margin-top: 0.4rem;
+  margin-left: 8rem;
+}
+
+.left h2 {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.left h2 span {
+  color: #5c0a7a;
+}
+
+.desc {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.see-more {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 0.2rem solid #d19c2a;
+  padding-bottom: 0.2rem;
+}
+
+/* DIVIDER */
+
+.divider {
+  width: 0.1rem;
+  background: #ccc;
+  margin: 0 3rem;
+}
+
+/* RIGHT */
+
+.right {
+  flex: 1;
+  width: 80%;
+}
+
+/* CARDS */
+/*
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}*/
+
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+.cards::-webkit-scrollbar {
+  height: 0.4rem;
+  display: none;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 1rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
+}
+.card {
+  flex-shrink: 0;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #ff3b30;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  border-left: 0.6rem solid #fff;
+  border-top: 0.4rem solid transparent;
+  border-bottom: 0.4rem solid transparent;
+}
+
+.card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: start;
+  text-decoration: underline;
+  width: 70%;
+}
+
+.tag {
+  padding: 0 1rem;
+  font-size: 0.7rem;
+  color: #777;
+  text-align: start;
+  text-decoration: underline;
+  margin-top: -0, 5rem;
+}
+
+.date {
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #c40000;
+  text-align: start;
+}
+
+/* NAV */
+
+.nav {
+  margin-top: 1.5rem;
+}
+
+.nav-btn-left {
+  border-radius: 50%;
+  border: 0.1rem solid #ccc;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* ================= */
+/* RESPONSIVE */
+/* ================= */
+
+/* ≤1024px */
+
+@media (max-width: 64em) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ≤768px */
+
+@media (max-width: 48em) {
+  .highlights {
+    flex-direction: column;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ≤368px */
+
+@media (max-width: 23em) {
+  .left h2 {
+    font-size: 1.6rem;
+  }
+
+  .desc {
+    font-size: 0.8rem;
   }
 }

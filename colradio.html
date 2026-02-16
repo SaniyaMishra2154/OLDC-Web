@@ -156,9 +156,146 @@
       </div>
 
       <!-- Section Second -->
+      <section class="audience">
+        <div class="audience-grid">
+          <div class="audience-card">
+            <div class="num">01</div>
+            <h3>Students & Learners</h3>
+            <p>
+              Academic enrichment, flexible learning, and student-led content
+            </p>
+          </div>
 
+          <div class="audience-card">
+            <div class="num">02</div>
+            <h3>Faculty & Academics</h3>
+            <div class="border1"></div>
+            <p>Platform for knowledge sharing, discussions, and outreach</p>
+          </div>
+
+          <div class="audience-card">
+            <div class="num">03</div>
+            <h3>Public & Community</h3>
+            <p>
+              Educational conversations, awareness content, and expert insights
+            </p>
+          </div>
+        </div>
+
+        <div class="side-arrow">
+          <span class="arrow">➜</span>
+        </div>
+      </section>
       <!-- Section Third -->
 
+      <section class="highlights">
+        <div class="left">
+          <p class="label">LATEST AUDIO HIGHLIGHTS</p>
+
+          <h2>
+            Recent from<br />
+            <span>COL Radio</span>
+          </h2>
+
+          <p class="desc">
+            A selection of recently released podcasts featuring academic
+            discussions, expert perspectives, and student voices from the COL
+            Radio platform.
+          </p>
+
+          <a href="#" class="see-more">See more on COL Radio →</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="right">
+          <div class="cards">
+            <div class="card">
+              <div class="img">
+                <img src="assets-web/images/col-video.png" alt="" />
+                <span class="play"></span>
+              </div>
+              <h3>Director, COL Answers Students’ Queries</h3>
+              <p class="tag">STUDENT INTERACTION</p>
+              <p class="date">Jan 07, 2026</p>
+            </div>
+
+            <div class="card">
+              <div class="img">
+                <img src="assets-web/images/col-video1.png" alt="" />
+                <span class="play"></span>
+              </div>
+              <h3>How to login and give Internal assessment</h3>
+              <p class="tag">STUDENT INTERACTION</p>
+              <p class="date">Jan 07, 2026</p>
+            </div>
+
+            <div class="card">
+              <div class="img">
+                <img src="assets-web/images/col-video.png" alt="" />
+                <span class="play"></span>
+              </div>
+              <h3>Director's Speech Laying of Ceremony</h3>
+              <p class="tag">EVENTS</p>
+              <p class="date">Jan 28, 2025</p>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets-web/images/col-video1.png" alt="" />
+                <span class="play"></span>
+              </div>
+              <h3>How to login and give Internal assessment</h3>
+              <p class="tag">STUDENT INTERACTION</p>
+              <p class="date">Jan 07, 2026</p>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets-web/images/col-video.png" alt="" />
+                <span class="play"></span>
+              </div>
+              <h3>Director, COL Answers Students’ Queries</h3>
+              <p class="tag">STUDENT INTERACTION</p>
+              <p class="date">Jan 07, 2026</p>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets-web/images/col-video1.png" alt="" />
+                <span class="play"></span>
+              </div>
+              <h3>How to login and give Internal assessment</h3>
+              <p class="tag">STUDENT INTERACTION</p>
+              <p class="date">Jan 07, 2026</p>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets-web/images/col-video.png" alt="" />
+                <span class="play"></span>
+              </div>
+              <h3>Director, COL Answers Students’ Queries</h3>
+              <p class="tag">STUDENT INTERACTION</p>
+              <p class="date">Jan 07, 2026</p>
+            </div>
+            <div class="card">
+              <div class="img">
+                <img src="assets-web/images/col-video1.png" alt="" />
+                <span class="play"></span>
+              </div>
+              <h3>How to login and give Internal assessment</h3>
+              <p class="tag">STUDENT INTERACTION</p>
+              <p class="date">Jan 07, 2026</p>
+            </div>
+          </div>
+
+          <div class="nav">
+            <span class="nav-btn-left"
+              ><img src="assets-web/images/Frame 427324287.png"
+            /></span>
+            <span class="nav-btn-right"
+              ><img src="assets-web/images/Frame 427324286.png"
+            /></span>
+          </div>
+        </div>
+      </section>
       <!-- Section Fourth -->
 
       <!-- Section Fifth -->
@@ -232,6 +369,25 @@
     </script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const slider = document.querySelector(".cards");
+      const next = document.querySelector(".nav-btn-right");
+      const prev = document.querySelector(".nav-btn-left");
+
+      next.addEventListener("click", () => {
+        slider.scrollBy({
+          left: 22 * 16,
+          behavior: "smooth",
+        });
+      });
+
+      prev.addEventListener("click", () => {
+        slider.scrollBy({
+          left: -22 * 16,
+          behavior: "smooth",
+        });
+      });
     </script>
   </body>
 </html>
