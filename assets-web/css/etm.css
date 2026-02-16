@@ -69,13 +69,6 @@ h2 strong {
     margin-right: -6rem;
     margin-left: -1rem;
   }
-  nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
-    margin-right: -5rem;
-    margin-top: -3rem;
-  }
-  .d-flex.my-2.my-lg-0.align-items-center.justify-content-end.right-brand {
-    margin-right: -2rem;
-  }
 }
 
 /*---------- Section Second ----------*/
