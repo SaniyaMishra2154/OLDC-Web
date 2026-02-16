@@ -122,7 +122,7 @@ body {
   }
   .d-flex.align-items-start.justify-content-between.border-cs {
     margin-right: -1rem;
-    margin-left: -2rem;
+    margin-left: -1rem;
   }
   .notice-hero::before {
     margin-left: -1rem;
