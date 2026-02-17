@@ -327,6 +327,11 @@ nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
   background: #f1ede6;
 }
 
+.card-image {
+  height: 100%;
+  width: 100%;
+}
+
 .card-image img {
   width: 100%;
   height: 15rem;
@@ -444,9 +449,12 @@ nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
   width: 70%;
 }
 /* Large - 1200px */
-@media (max-width: 75em) {
+@media (min-width: 75em) {
   .container-alignment {
-    width: 95%;
+    width: 65%;
+  }
+  .alignment-content p {
+    width: 90%;
   }
 }
 

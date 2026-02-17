@@ -117,16 +117,15 @@ body {
 
 .related img {
   width: 80%;
-
   margin-left: 2rem;
   margin-top: -14rem;
 }
 
 .related p {
   font-size: 0.95rem;
-  margin-top: -14.5rem;
-  margin-left: 3.5rem;
-  width: 60%;
+  margin-top: -12.5rem;
+  margin-left: 2rem;
+  width: 80%;
   text-align: center;
 }
 
@@ -205,6 +204,18 @@ body {
 @media (min-width: 75em) {
   .news-content h1 {
     font-size: 1.8rem;
+  }
+  .side-button img {
+    margin-top: -15rem;
+  }
+  .text1 {
+    margin-top: -10rem;
+  }
+  .text2 {
+    margin-top: -10rem;
+  }
+  .related img {
+    margin-top: -10rem;
   }
 }
 

@@ -334,6 +334,10 @@ p.free {
   .event-nav {
     margin-right: 0rem;
   }
+  .sidebar-links a {
+    margin-bottom: -5rem;
+    margin-top: 7rem;
+  }
 }
 /* LARGE SCREENS */
 @media (min-width: 1700px) {

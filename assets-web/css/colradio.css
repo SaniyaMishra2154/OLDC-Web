@@ -64,13 +64,14 @@ body {
   color: #444;
   width: 109%;
   font-weight: 800;
+  margin-left: -3rem;
 }
 
 .col-tagline {
   font-size: 1rem;
   letter-spacing: 0.1em;
   margin-bottom: 2rem;
-  margin-left: 1rem;
+  margin-left: -2rem;
   width: 95%;
   font-weight: 500;
 }
@@ -80,7 +81,7 @@ body {
   margin-top: 10rem;
   color: #555;
   font-size: 1.2rem;
-  margin-left: 1rem;
+  margin-left: -2rem;
   width: 80%;
 }
 
@@ -139,7 +140,7 @@ body {
 
 .who {
   padding: 0rem 4rem;
-  margin-left: 6rem;
+  margin-left: 3rem;
 }
 
 .who h2 {
@@ -207,6 +208,24 @@ body {
 
   .who h2 {
     font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .colradio-hero h1 {
+    margin-top: 6rem;
+  }
+  .col-hero-image {
+    margin-top: -8rem;
+  }
+  .who {
+    margin-top: 5rem;
+  }
+  .btn-wrap {
+    margin-bottom: 3rem;
+  }
+  .col-desc {
+    margin-top: 6rem;
   }
 }
 
@@ -328,6 +347,15 @@ body {
 
   .audience-card p {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .side-arrow {
+    width: 10rem;
+  }
+  .audience-grid {
+    max-width: 80%;
   }
 }
 
@@ -547,5 +575,14 @@ body {
 
   .desc {
     font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .label::after {
+    margin-left: 5rem;
+  }
+  .right {
+    width: 70%;
   }
 }

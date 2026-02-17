@@ -522,7 +522,6 @@ h2 strong {
   color: #444;
   margin-bottom: 2rem;
   font-size: 1.4rem;
-  text-align: center;
 }
 
 .btn {
@@ -533,7 +532,6 @@ h2 strong {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 700;
-  margin-left: 2rem;
   border-bottom: none;
 }
 
@@ -602,8 +600,5 @@ h2 strong {
   }
   .underline {
     margin-left: -1rem;
-  }
-  .btn {
-    margin-left: 2rem;
   }
 }

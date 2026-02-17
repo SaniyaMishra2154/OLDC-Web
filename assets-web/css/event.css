@@ -440,6 +440,10 @@ body {
   .pagination span {
     margin-right: 2rem;
   }
+  .events-img img {
+    width: 18rem;
+    height: 19rem;
+  }
 }
 
 /* Large screens */
