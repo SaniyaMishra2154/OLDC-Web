@@ -188,6 +188,18 @@ body {
   }
 }
 
+@media (max-width: 1366px) {
+  .pragyan-hero-image {
+    margin-right: -24rem;
+  }
+  .pragyan-hero-container {
+    height: 77.5vh;
+  }
+  .hero-right {
+    margin-left: -38rem;
+    margin-top: 26rem;
+  }
+}
 /*---------- Section Second ----------*/
 
 .student-features {
@@ -449,6 +461,11 @@ body {
   }
 }
 
+@media (max-width: 1366px) {
+  .number {
+    margin-top: 9rem;
+  }
+}
 /*---------- Section Third ----------*/
 
 /* SECTION */
@@ -617,5 +634,15 @@ body {
 
   .info-card h3 {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1366px) {
+  .Learner-content h2 {
+    width: 41%;
+  }
+  .Learner-image img {
+    max-width: 300%;
+    width: 240%;
   }
 }
