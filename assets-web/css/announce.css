@@ -487,6 +487,7 @@ body {
 @media (max-width: 600px) {
   .announcement-container {
     grid-template-columns: 1fr;
+    display: block;
   }
   .list-header,
   .list-row {
