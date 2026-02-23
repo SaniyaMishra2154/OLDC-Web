@@ -222,7 +222,7 @@ p.free {
 
 /* SIDEBAR */
 .event-sidebar {
-  background: #5a0b7a;
+  background: #4f0071;
   color: #fff;
   padding: 2rem;
   height: 50%;
@@ -262,8 +262,8 @@ p.free {
 }
 
 .sidebar-links a:hover {
-  color: #5a0b7a;
-  border-bottom: 0.2rem solid #5a0b7a;
+  color: #4f0071;
+  border-bottom: 0.2rem solid #4f0071;
 }
 
 .sidebar-links img {
@@ -275,7 +275,7 @@ p.free {
 }
 
 .sidebar-links img:hover {
-  background-color: #b65fd8;
+  background-color: #4f0071;
   color: white;
   border-radius: 50%;
 }

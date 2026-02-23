@@ -217,7 +217,7 @@ body {
   display: flex;
   gap: 3rem;
   align-items: center;
-  border-bottom: 0.15rem solid #6a0572;
+  border-bottom: 0.15rem solid #4f0071;
   padding-bottom: 0.3rem;
   margin-bottom: 2rem;
 }
@@ -231,7 +231,7 @@ body {
 }
 
 .events-top span:hover {
-  border-bottom: 0.2rem solid #6a0572;
+  border-bottom: 0.2rem solid #4f0071;
   font-weight: 600;
 }
 
@@ -250,7 +250,7 @@ body {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  color: #6a0572;
+  color: #4f0071;
 }
 
 .dropdown-header1 span {
@@ -288,7 +288,7 @@ body {
 }
 
 .dropdown-content1 li:hover {
-  color: #6a0572;
+  color: #4f0071;
 }
 
 /* OPEN STATE */
@@ -344,7 +344,7 @@ body {
 }
 
 .meta strong {
-  color: #6a0572;
+  color: #4f0071;
   text-decoration: underline;
   margin-right: 0.3rem;
 }

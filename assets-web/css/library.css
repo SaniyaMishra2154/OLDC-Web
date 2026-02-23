@@ -123,7 +123,7 @@ body {
 .sidebar-inner a:hover {
   background: #e6e1ea;
   padding: 1rem;
-  border-right: 0.3rem solid purple;
+  border-right: 0.3rem solid #4f0071;
   font-weight: bold;
   margin-bottom: 2rem;
 }
@@ -231,14 +231,14 @@ body {
 
 .campus-title {
   font-weight: 700;
-  color: #5a007a;
+  color: #4f0071;
   font-size: 1.8rem;
   margin-right: auto;
 }
 
 .campus-arrow {
   font-size: 1.6rem;
-  color: #5a007a;
+  color: #4f0071;
   transition: transform 0.3s ease;
 }
 
@@ -373,7 +373,7 @@ body {
 .slider-arrows button {
   width: 3rem;
   height: 3rem;
-  background: #6a1b9a;
+  background: #4f0071;
   color: #fff;
   border: none;
   font-size: 1.6rem;
@@ -460,7 +460,7 @@ body {
 
 /* ========== Section Fourth =========== */
 .membership-section {
-  background: #5b0a78;
+  background: #4f0071;
   padding: 3rem 2rem;
   color: #ffffff;
   margin-top: 2rem;
@@ -597,7 +597,7 @@ body {
 }
 
 .loan-header h2 {
-  color: #4b0d73;
+  color: #4f0071;
   font-size: 2.5rem;
 }
 
@@ -658,7 +658,7 @@ body {
 
 .loan-divider {
   height: 0.18rem;
-  background: #4b0d73;
+  background: #4f0071;
   width: 100%;
 }
 
@@ -783,7 +783,7 @@ body {
 
 .accordion summary span:first-child {
   font-size: 1.4rem;
-  color: #4b0d73;
+  color: #4f0071;
   font-weight: 600;
 }
 
@@ -792,8 +792,8 @@ body {
 .icon {
   width: 1rem;
   height: 1rem;
-  border-right: 0.15rem solid #4b0d73;
-  border-bottom: 0.15rem solid #4b0d73;
+  border-right: 0.15rem solid #4f0071;
+  border-bottom: 0.15rem solid #4f0071;
   transform: rotate(45deg);
   transition: transform 0.3s ease;
 }
@@ -874,7 +874,7 @@ details[open] .icon {
 }
 
 .section-title {
-  color: #4b0d73;
+  color: #4f0071;
   font-size: 3rem;
   margin-bottom: 2rem;
 }
@@ -896,7 +896,7 @@ details[open] .icon {
 /* LEFT */
 
 .purple-card {
-  background: #5c0b78;
+  background: #4f0071;
   color: white;
 }
 
@@ -915,7 +915,7 @@ details[open] .icon {
 /* RIGHT */
 
 .bordered-card {
-  border: 0.12rem solid #5c0b78;
+  border: 0.12rem solid #4f0071;
   background: white;
 }
 
@@ -1030,14 +1030,14 @@ details[open] .icon {
 }
 
 .content-box {
-  border: 0.08rem solid #6b2ca3;
+  border: 0.08rem solid #4f0071;
   border-radius: 2rem;
   padding: 3rem;
 }
 
 .title {
   font-size: 2.2rem;
-  color: #4b0082;
+  color: #4f0071;
   margin-bottom: 1.5rem;
 }
 

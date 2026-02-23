@@ -48,7 +48,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding-top: 25rem;
-  border-bottom: 0.58rem solid #5b0a82;
+  border-bottom: 0.58rem solid #4f0071;
 }
 
 .side-links {
@@ -83,7 +83,7 @@ body {
 
 /* purple button */
 .side-button.purp {
-  background: #5b0a82;
+  background: #4f0071;
   border-radius: 0.25rem;
   margin-left: -3.5rem;
 }
@@ -135,7 +135,7 @@ body {
 }
 
 .news-content1 h1 {
-  color: #6a1b9a;
+  color: #4f0071;
   font-size: 1.6rem;
   max-width: 45rem;
 }
@@ -223,7 +223,7 @@ body {
 :root {
   --text-dark: #222;
   --text-muted: #555;
-  --accent: #5b0a82;
+  --accent: #4f0071;
   --border-light: #e0e0e0;
 }
 
@@ -333,7 +333,7 @@ body {
 
 /* ========== Section Third =========== */
 :root {
-  --purple: #5a0c83;
+  --purple: #4f0071;
   --text-dark: #222;
   --text-light: #555;
   --border: #e0e0e0;

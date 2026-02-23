@@ -137,7 +137,7 @@ h2 strong {
 }
 
 .content h2 span {
-  color: #5a1e78;
+  color: #4f0071;
   text-decoration: underline;
 }
 
@@ -262,7 +262,7 @@ h2 strong {
 .divider {
   height: 0.3rem;
   width: 140%;
-  background: #7a2b91;
+  background: #4f0071;
   margin: 2rem 0 3rem 0;
   margin-left: -14.5rem;
 }
@@ -526,7 +526,7 @@ h2 strong {
 
 .btn {
   display: inline-block;
-  background: #6a2c91;
+  background: #4f0071;
   color: #fff;
   padding: 0.8rem 8.5rem;
   text-decoration: none;

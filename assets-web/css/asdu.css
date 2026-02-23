@@ -192,7 +192,7 @@ nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
 .card {
   background: #ffffff;
   padding: 1.2rem;
-  border-bottom: 0.5rem solid #6a1bb1;
+  border-bottom: 0.5rem solid #4f0071;
 }
 
 .card h2 {
@@ -253,7 +253,7 @@ nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
 .bar1 {
   width: 0.3rem;
   height: 2rem;
-  background: #6a1bb1;
+  background: #4f0071;
   margin-right: 1rem;
   margin-left: 10rem;
 }
@@ -488,7 +488,7 @@ nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
 
 /*---------- Section Sixth ----------*/
 .champions-left h2 {
-  color: #6a1bb1;
+  color: #4f0071;
   font-weight: 700;
 }
 

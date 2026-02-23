@@ -237,7 +237,7 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0.top-list {
 
 /*---------- Section Second ----------*/
 :root {
-  --purple: #5a0a82;
+  --purple: #4f0071;
   --light-purple: #f3e8fa;
   --gray: #666;
 }
@@ -456,7 +456,7 @@ body {
 
 /*---------- Section Third ----------*/
 :root {
-  --purple: #5a0a82;
+  --purple: #4f0071;
   --light-bg: #f6f3f8;
   --text-gray: #555;
 }
@@ -649,7 +649,7 @@ body {
 
 /*---------- Section Fourth ----------*/
 :root {
-  --purple: #5a0a82;
+  --purple: #4f0071;
   --text-gray: #555;
   --border-gray: #ccc;
 }
@@ -780,7 +780,7 @@ body {
 /* HEADER */
 .browse-header {
   display: flex;
-  background: #5b0a82;
+  background: #4f0071;
   align-items: center;
   gap: 0.75rem;
   padding: 1.2rem 2rem;
@@ -889,7 +889,7 @@ body {
   border-bottom: 0.2rem solid #e0b34f;
 }
 .news-card1 h4:hover {
-  color: #5b0a82;
+  color: #4f0071;
 }
 
 /* FOOTER */
@@ -1180,7 +1180,7 @@ body {
   gap: 1rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #5b0a82;
+  color: #4f0071;
   text-decoration: none;
 }
 
@@ -1188,7 +1188,7 @@ body {
   width: 2.2rem;
   height: 2.2rem;
   border-radius: 50%;
-  background: #5b0a82;
+  background: #4f0071;
   color: #fff;
   display: flex;
   align-items: center;
