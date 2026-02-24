@@ -965,13 +965,13 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .news-card {
-    width: 16rem;
+  .news-card1 {
+    width: 23rem;
   }
 }
 @media (min-width: 992px) {
-  .news-card {
-    width: 18rem;
+  .news-card1 {
+    width: 24rem;
   }
 }
 

@@ -724,8 +724,11 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
   }
 
   .alerts-tabs {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+  }
+  button.alerts-tab {
+    font-size: 1rem;
   }
 }
 
@@ -1336,6 +1339,9 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
   .secondary-menu .nav-link {
     padding: 0.6rem 1rem;
     display: block;
+  }
+  .d-flex.align-items-start.justify-content-between.border-cs1 {
+    margin-left: 0rem;
   }
 }
 
