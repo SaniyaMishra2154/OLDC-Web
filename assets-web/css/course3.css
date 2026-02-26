@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-behavior: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== Section First ==== */
+
+.tabs {
+  margin-bottom: 1rem;
+}
+
+.content-wrapper {
+  height: 80vh;
+}
+
+/* Center Wrapper */
+.pdf-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* A4 Styled Page */
+.pdf-page {
+  width: 21cm;
+  height: 40rem;
+  background: #ffffff;
+  border: 0.7rem solid #e2cfea; /* Border like screenshot */
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* PDF inside */
+.pdf-page iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ================= Responsive ================= */
+
+/* Mobile */
+@media (max-width: 36rem) {
+  .pdf-page {
+    width: 95%;
+    height: 80vh;
+  }
+}
+
+/* Tablet */
+@media (min-width: 48rem) {
+  .pdf-page {
+    width: 85%;
+  }
+}
+
+/* Laptop */
+@media (min-width: 62rem) {
+  .pdf-page {
+    width: 70%;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 75rem) {
+  .pdf-page {
+    width: 100%;
+  }
+}
+
+/* Print */
+@media print {
+  body {
+    background: none;
+  }
+
+  .pdf-page {
+    box-shadow: none;
+    border: none;
+  }
+}
