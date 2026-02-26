@@ -24,3 +24,833 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.page-header {
+  background: #e2cfea;
+  padding: 1.2rem 0;
+  text-align: center;
+  border-bottom: 0.15rem solid #d6d1da;
+}
+
+.page-header h2 {
+  margin: 0;
+  color: #4f0071;
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 36em) {
+  .page-header h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .page-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 62em) {
+  .page-header h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 75em) {
+  .page-header h2 {
+    font-size: 1.7rem;
+  }
+}
+
+/*---------- Section First ----------*/
+
+.course-details {
+  background: #2e2e2e;
+  padding: 0rem 2rem;
+  color: #fff;
+}
+
+/* CONTAINER */
+.course-container {
+  display: flex;
+  gap: 10.5rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: auto;
+}
+
+/* LEFT */
+.course-left {
+  flex: 1;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+  font-size: 1.2rem;
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+  text-decoration: none;
+}
+
+.breadcrumb a {
+  color: #f5f5f5;
+  text-decoration: underline;
+}
+.breadcrumb span {
+  color: #f5f5f5;
+}
+
+/* TITLE */
+.course-title {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  margin-left: -8.5rem;
+}
+
+/* META GRID */
+.course-meta {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem 2rem;
+  margin-left: -8rem;
+}
+
+.meta-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.meta-item strong {
+  font-weight: 300;
+}
+
+/* RIGHT IMAGE */
+.course-right {
+  flex: 1;
+  position: relative;
+  margin-right: -15rem;
+}
+
+.course-right img {
+  width: 80%;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+/* PLAY BUTTON */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(205 202 202 / 80%);
+  color: #000;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: -3rem;
+  border: 0.1rem solid black;
+}
+
+/* 📱 max-width:576px */
+
+@media (max-width: 36em) {
+  .course-container {
+    flex-direction: column;
+  }
+
+  .course-title {
+    font-size: 1.5rem;
+  }
+
+  .course-meta {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 📱 min-width:768px */
+
+@media (min-width: 48em) {
+  .course-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* 💻 min-width:992px */
+
+@media (min-width: 62em) {
+  .course-title {
+    font-size: 2rem;
+  }
+}
+
+/* 🖥️ min-width:1200px */
+
+@media (min-width: 75em) {
+  .course-title {
+    font-size: 2.2rem;
+  }
+}
+
+/*---------- Section Second ----------*/
+.course-body {
+  background: #f3f2f5;
+  padding: 0rem 0rem;
+}
+
+/* WRAPPER */
+.content-wrapper {
+  max-width: 75%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* LEFT CONTENT */
+.left-content {
+  overflow-y: auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 2rem;
+  border-bottom: 0.12rem solid #d6d1da;
+  margin-bottom: 2rem;
+  margin-left: 0rem;
+}
+
+.tabs span {
+  padding-bottom: 0.6rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.tabs span:hover {
+  color: #4f0071;
+  border-bottom: 0.18rem solid #4f0071;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section h3 {
+  margin-bottom: 1rem;
+}
+
+.section li {
+  font-size: 1.1rem;
+}
+
+.section p {
+  line-height: 1.7;
+  color: #555;
+  font-size: 1.1rem;
+  width: 90%;
+}
+
+.list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  font-size: 1.1rem;
+}
+
+ul {
+  padding-left: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* RIGHT CARD */
+.right-card {
+  align-self: start;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.08);
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-top: -3rem;
+  position: sticky;
+  top: 0;
+  align-self: start;
+
+  height: fit-content;
+}
+
+.price-card {
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.primary {
+  background: #4f0071;
+  color: #fff;
+  border: none;
+}
+
+.outline {
+  background: transparent;
+  border: 0.1rem solid #4f0071;
+  color: #4f0071;
+}
+
+.helpdesk {
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  width: 100%;
+}
+
+.helpdesk h4 {
+  border-bottom: 0.1rem solid #333333;
+  padding-bottom: 0.5rem;
+}
+
+.share {
+  margin-top: 2rem;
+}
+
+.share h4 {
+  border-bottom: 0.1rem solid #333333;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+
+/* 📱 max-width 576 */
+
+@media (max-width: 36em) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .right-card {
+    position: relative;
+    top: auto;
+  }
+
+  .list-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 📱 min-width 768 */
+
+@media (min-width: 48em) {
+  .content-wrapper {
+    grid-template-columns: 1.6fr 1fr;
+  }
+}
+
+/* 💻 min-width 992 */
+
+@media (min-width: 62em) {
+  .content-wrapper {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* 🖥️ min-width 1200 */
+
+@media (min-width: 75em) {
+  .content-wrapper {
+    gap: 2.5rem;
+  }
+}
+
+/*---------- Section Third ----------*/
+
+.accordion {
+  margin-top: 2rem;
+}
+
+/* ITEM */
+.accordion-item {
+  border: 0.08rem solid #ddd;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+/* HEADER */
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  padding: 0.9rem 1.2rem;
+  background: #e9e6eb;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  font-size: 1.1rem;
+}
+
+/* ARROW */
+.accordion-header::after {
+  content: "";
+  width: 1.7rem;
+  height: 2rem;
+  background-image: url("../images/down.png"); /* 👈 apni image path */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.accordion-item.active .accordion-header::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* CONTENT */
+.accordion-content {
+  display: none;
+  padding: 1.2rem;
+}
+
+/* ACTIVE */
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/* TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th,
+td {
+  border: 0.06rem solid #ddd;
+  padding: 0.6rem;
+  text-align: left;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+td {
+  font-weight: 400;
+  width: 36%;
+}
+
+.accordion-content span {
+  font-weight: 600;
+  color: #000;
+}
+
+thead {
+  background: #f3f2f5;
+}
+
+/* DANGER TEXT */
+.danger {
+  color: #c62828;
+}
+
+.accordion-content p {
+  font-size: 1rem;
+}
+
+.accordion-content li {
+  font-size: 1rem;
+}
+
+/* TABLE */
+.assessment-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.assessment-table th,
+.assessment-table td {
+  border: 0.06rem solid #ddd;
+  padding: 0.7rem;
+  text-align: left;
+  text-align: center;
+}
+
+.assessment-table thead {
+  background: #f3f2f5;
+}
+
+/* NOTE */
+.note {
+  color: #c62828;
+  font-size: 1rem;
+  margin: 1rem 1.5rem;
+}
+
+/* MARKS INFO */
+.marks-info {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.marks-info strong {
+  color: #4f0071;
+}
+
+/* TOTAL BOX */
+.total-box {
+  background: #f3efe6;
+  padding: 0.8rem 1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.total-box span {
+  color: #c62828;
+  font-size: 1rem;
+}
+
+.total-box small {
+  font-weight: 400;
+  margin-left: 0.4rem;
+  font-size: 1rem;
+}
+
+/* ================= */
+/* 📱 max-width 576 */
+/* ================= */
+
+@media (max-width: 36em) {
+  th,
+  td {
+    font-size: 0.8rem;
+  }
+}
+
+/* ================= */
+/* 📱 min-width 768 */
+/* ================= */
+
+@media (min-width: 48em) {
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+}
+
+/* ================= */
+/* 💻 min-width 992 */
+/* ================= */
+
+@media (min-width: 62em) {
+  th,
+  td {
+    font-size: 1rem;
+  }
+}
+
+/* 🖥️ min-width 1200 */
+
+@media (min-width: 75em) {
+  .accordion {
+    margin-top: 2.5rem;
+  }
+}
+
+/* 📱 max-width 576 */
+
+@media (max-width: 36em) {
+  .section-body {
+    padding: 1rem;
+  }
+
+  .assessment-table th,
+  .assessment-table td {
+    font-size: 0.85rem;
+  }
+}
+
+/* 📱 min-width 768 */
+
+@media (min-width: 48em) {
+  .assessment-table th,
+  .assessment-table td {
+    font-size: 0.95rem;
+  }
+}
+
+/* 💻 min-width 992 */
+
+@media (min-width: 62em) {
+  .section-body {
+    padding: 1.4rem;
+  }
+}
+
+/* 🖥️ min-width 1200 */
+
+@media (min-width: 75em) {
+  .assessment-section {
+    margin-top: 2.5rem;
+  }
+}
+
+/*---------- Section Fourth ----------*/
+.trainers-section {
+  background: #f3f2f5;
+  padding: 2.5rem 5rem;
+}
+
+/* TITLE */
+.trainers-title {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* CARD */
+.trainer-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 5.5rem;
+}
+
+/* IMAGE */
+.trainer-image {
+  margin-left: -1rem;
+}
+
+.trainer-image img {
+  width: 160%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 0.3rem solid #e6bd71;
+}
+
+/* INFO */
+.trainer-info {
+  margin-left: 5rem;
+}
+
+.trainer-info h3 {
+  color: #4f0071;
+  margin-bottom: 0.3rem;
+}
+
+.trainer-info h4 {
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 0.6rem;
+  color: #7b3e95;
+  font-size: 1.2rem;
+}
+
+.trainer-info p {
+  color: #555;
+  line-height: 1.6;
+  max-width: 40rem;
+  font-size: 0.9rem;
+}
+
+/* 📱 max-width 576 */
+
+@media (max-width: 36em) {
+  .trainer-card {
+    flex-direction: column;
+  }
+
+  .trainer-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* 📱 min-width 768 */
+
+@media (min-width: 48em) {
+  .trainer-card {
+    gap: 0.5rem;
+  }
+}
+
+/* 💻 min-width 992 */
+
+@media (min-width: 62em) {
+  .trainer-info p {
+    max-width: 45rem;
+  }
+}
+
+/* 🖥️ min-width 1200 */
+
+@media (min-width: 75em) {
+  .trainers-section {
+    padding: 3rem 3rem;
+  }
+}
+
+/*---------- Section Fifth ----------*/
+.explore-section {
+  background: #f3f2f5;
+  padding: 2.5rem 5%;
+}
+
+/* TITLE */
+.section-title {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* CARD */
+.explore-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  background: #fff;
+  border: 0.08rem solid #d6cbe0;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  gap: 1rem;
+}
+
+/* CONTENT */
+.explore-content h3 {
+  margin: 0.4rem 0 1rem;
+  font-size: 1.3rem;
+}
+
+.tag {
+  color: #4f0071;
+  font-weight: 600;
+}
+
+.meta {
+  color: #666;
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+/* PRICE */
+.price {
+  position: absolute;
+  right: 18rem;
+  top: 1rem;
+  font-size: 1.2rem;
+  color: #5b2a86;
+  font-weight: 600;
+}
+
+/* IMAGE */
+.explore-image img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+/* EXPLORE MORE */
+.explore-more {
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.explore-more a {
+  color: #4f0071;
+}
+
+.arrow {
+  display: inline-block;
+  margin-left: 0.5rem;
+  background: #5b2a86;
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  line-height: 2rem;
+  rotate: calc(90deg);
+}
+.arrow img {
+  margin-top: -0.4rem;
+}
+
+/* ================= */
+/* 📱 max-width 576 */
+/* ================= */
+
+@media (max-width: 36em) {
+  .explore-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .price {
+    position: static;
+  }
+
+  .explore-image img {
+    height: auto;
+  }
+}
+
+/* ================= */
+/* 📱 min-width 768 */
+/* ================= */
+
+@media (min-width: 48em) {
+  .explore-card {
+    grid-template-columns: 1.8fr 1fr;
+  }
+}
+
+/* ================= */
+/* 💻 min-width 992 */
+/* ================= */
+
+@media (min-width: 62em) {
+  .explore-card {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* ================= */
+/* 🖥️ min-width 1200 */
+/* ================= */
+
+@media (min-width: 75em) {
+  .explore-section {
+    padding: 3rem 2rem;
+  }
+}
