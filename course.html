@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Announcements</title>
+    <title>Course Page List view</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets-web/css/main.css" />
     <link rel="stylesheet" href="assets-web/css/news.css" />
     <link rel="stylesheet" href="assets-web/css/announce.css" />
+    <link rel="stylesheet" href="assets-web/css/course2.css" />
+    <link rel="stylesheet" href="assets-web/css/course.css" />
   </head>
   <body>
     <!-- Section First -->
@@ -77,7 +79,7 @@
     </div>
 
     <main>
-      <!-- Menu Section -->
+      <!-- HERO Section -->
       <div class="hero position-relative">
         <nav class="navbar secondary-menu navbar-expand-lg position-absolute">
           <div class="container-fluid">
@@ -153,114 +155,97 @@
         </nav>
       </div>
 
-      <section class="notice-hero">
-        <div class="notice-inner">
-          <h1 class="notice-title" data-aos="zoom-in" data-aos-duration="1500">
-            Official Notices <span>&</span> Updates
-          </h1>
+      <section class="Course-hero">
+        <div
+          class="course-hero-inner"
+          data-aos="zoom-in"
+          data-aos-duration="1500"
+        >
+          <img
+            src="assets-web/images/list-view-hero-img.png"
+            alt="OLDC Event"
+            class="course-hero-img"
+          />
         </div>
       </section>
 
       <!-- Section Second -->
-      <section class="breadcrumb-wrap">
-        <div class="breadcrumb-container">
-          <nav class="breadcrumb">
-            <a href="#">Home</a>
-            <span>&gt;</span>
-            <a href="#">News &amp; Announcements</a>
-            <span>&gt;</span>
-            <span class="current">Announcements</span>
-          </nav>
+      <section class="learn-content">
+        <div class="container-course">
+          <div class="left-content">
+            <h1>Learn With OLDC</h1>
+            <p>Building Skills. Unlocking Opportunities.</p>
+          </div>
+
+          <div class="right-content">
+            <div class="course-search-box">
+              <input type="text" placeholder="Search Courses" />
+              <button>
+                <img src="assets-web/images/Frame 427324464.png" />
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Section Third -->
       <section class="announcement-page5">
-        <!-- HEADER BAR -->
-        <div
-          class="announcement-header"
-          data-aos="fade-up"
-          data-aos-duration="1500"
-        >
-          <span class="bar"></span>
-          <h2>Important Announcements</h2>
-        </div>
-
         <!-- MAIN LAYOUT -->
         <div class="announcement-container">
           <!-- LEFT SIDEBAR -->
           <aside class="sidebar" data-aos="fade-right" data-aos-duration="1500">
-            <!-- SEARCH -->
-            <div class="search-box">
-              <input type="text" placeholder="Search by keyword" />
-              <span class="search-icon"
-                ><img src="assets-web/images/search img.png"
-              /></span>
-            </div>
-
-            <!-- CALENDAR -->
-            <div class="calendar-box">
-              <h4>
-                <img
-                  class="left-img"
-                  src="assets-web/images/left arrow.png"
-                />December 2025<img
-                  class="right-img"
-                  src="assets-web/images/right arrow.png"
-                />
-              </h4>
-
-              <div class="calendar-grid">
-                <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span
-                ><span>Thu</span><span>Fri</span><span>Sat</span>
-                <span class="back">25</span><span class="back">26</span
-                ><span class="back">27</span><span class="back">28</span
-                ><span class="back">29</span><span class="back">30</span
-                ><span>1</span> <span>2</span><span>3</span><span>4</span
-                ><span>5</span><span>6</span><span>7</span><span>8</span>
-                <span>9</span><span>10</span><span>11</span><span>12</span
-                ><span>13</span><span>14</span><span>15</span> <span>16</span
-                ><span>17</span><span>18</span><span>19</span><span>20</span
-                ><span>21</span> <span>22</span><span>23</span><span>24</span
-                ><span>25</span><span>26</span><span class="active">27</span
-                ><span>28</span><span>29</span><span>30</span><span>31</span>
-              </div>
-            </div>
-
-            <div class="filter-box">
-              <!-- SORT BY -->
-              <div class="dropdown">
-                <button class="dropdown-header" onclick="toggleDropdown(this)">
-                  <span>Sort By</span>
+            <div class="filter-wrapper">
+              <!-- Courses -->
+              <div class="filter-box active">
+                <div class="filter-header" onclick="toggleDropdown(this)">
+                  <span>Courses</span>
                   <span class="arrow"
                     ><img src="assets-web/images/Vector.png"
                   /></span>
-                </button>
+                </div>
 
-                <ul class="dropdown-content">
-                  <li>Latest First</li>
-                  <li>Oldest First</li>
-                </ul>
+                <div class="filter-body">
+                  <label class="check">
+                    <input type="checkbox" />
+                    <span>Job Ready Skill Courses</span>
+                  </label>
+
+                  <label class="check">
+                    <input type="checkbox" />
+                    <span>Foreign Language Courses</span>
+                  </label>
+                </div>
               </div>
 
-              <!-- CATEGORIES -->
-              <div class="dropdown">
-                <button class="dropdown-header" onclick="toggleDropdown(this)">
-                  <span>All Categories</span>
+              <!-- Mode -->
+              <div class="filter-box active">
+                <div class="filter-header" onclick="toggleDropdown(this)">
+                  <span>Mode of Learning</span>
                   <span class="arrow"
                     ><img src="assets-web/images/Vector.png"
                   /></span>
-                </button>
+                </div>
 
-                <ul class="dropdown-content">
-                  <li>All Announcements</li>
-                  <li>Admissions</li>
-                  <li>Examinations</li>
-                  <li>Academic</li>
-                  <li>Administration</li>
-                  <li>Events</li>
-                  <li>Results</li>
-                </ul>
+                <div class="filter-body">
+                  <label class="check">
+                    <input type="checkbox" />
+                    <span>Online</span>
+                  </label>
+
+                  <label class="check">
+                    <input type="checkbox" />
+                    <span>Offline</span>
+                  </label>
+
+                  <label class="check">
+                    <input type="checkbox" />
+                    <span>Hybrid</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="reset">
+                <a href="#" onclick="resetFilters()">Reset Filters →</a>
               </div>
             </div>
           </aside>
@@ -272,100 +257,144 @@
             data-aos-duration="1500"
           >
             <!-- TABLE HEADER -->
-            <div class="list-header">
-              <span>Announcements</span>
-              <span>Date</span>
-              <span>Actions</span>
+            <div class="tabs">
+              <span class="list-btn active">List View</span>
+              <span class="grid-btn">Grid View</span>
             </div>
 
-            <!-- ROW -->
-            <div class="list-row">
-              <p>Exam Form Submission Date Extended – Skill Courses</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/link-logo.png" /></span>
-            </div>
+            <!-- EVENTS LIST -->
+            <div class="events-list">
+              <!-- CARD 1 -->
+              <div class="explore-card">
+                <div class="explore-content">
+                  <span class="tag">CISBC</span>
+                  <h3>
+                    Certificate course in Introduction to Computer Networks
+                  </h3>
 
-            <div class="list-row">
-              <p>Applications Invited – ICC Student Representatives</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/link-logo.png" /></span>
-            </div>
+                  <div class="meta">
+                    <span>Offline Mode</span>
+                    <span
+                      ><img src="assets-web/images/book.png" /> 1 Month</span
+                    >
+                  </div>
+                </div>
 
-            <div class="list-row">
-              <p>Exam Form Submission Date Extended – Language Courses</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/pdf-logo.png" /></span>
-            </div>
+                <div class="price">₹ 6000</div>
 
-            <div class="list-row">
-              <p>ICC Student Representative Applications Open</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/link-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Skill Course Examination Schedule Released</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/link-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Language Course Assessment Guidelines Issued</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/pdf-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Enrollment Window Open for Skill Certification Courses</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/pdf-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Revised Fee Structure for Skill Programmes</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/pdf-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Orientation Programme for New Skill Learners</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/pdf-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Applications Invited – ICC Student Representatives</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/link-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Exam Form Submission Date Extended – Language Courses</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/pdf-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>ICC Student Representative Applications Open</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/link-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Skill Course Examination Schedule Released</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/link-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Language Course Assessment Guidelines Issued</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/pdf-logo.png" /></span>
-            </div>
-            <div class="list-row">
-              <p>Enrollment Window Open for Skill Certification Courses</p>
-              <span>20 Dec 2025</span>
-              <span><img src="assets-web/images/pdf-logo.png" /></span>
-            </div>
+                <div class="explore-image">
+                  <img src="assets-web/images/course1.png" alt="" />
+                </div>
+              </div>
 
-            <!-- PAGINATION -->
-            <div class="pagination" data-aos="zoom-in" data-aos-duration="1500">
-              <span class="page-num">1</span>
-              <span class="page-num">2</span>
-              <span class="page-num">3</span>
-              <span class="page-num">4</span>
-              <span class="page-num">5</span>
-              <span class="next">Next ›</span>
+              <!-- CARD 2 -->
+              <div class="explore-card">
+                <div class="explore-content">
+                  <span class="tag">CISBC</span>
+                  <h3>Certificate course in AC, Refrigerator Repairing</h3>
+
+                  <div class="meta">
+                    <span>Offline Mode</span>
+                    <span
+                      ><img src="assets-web/images/book.png" /> 1 Month</span
+                    >
+                  </div>
+                </div>
+
+                <div class="price">₹ 5500</div>
+
+                <div class="explore-image">
+                  <img src="assets-web/images/course2.png" alt="" />
+                </div>
+              </div>
+              <!-- CARD 3 -->
+              <div class="explore-card">
+                <div class="explore-content">
+                  <span class="tag">CISBC</span>
+                  <h3>Certificate course in Chinese</h3>
+
+                  <div class="meta">
+                    <span>Offline Mode</span>
+                    <span
+                      ><img src="assets-web/images/book.png" /> 1 Month</span
+                    >
+                  </div>
+                </div>
+
+                <div class="price">₹ 10,000</div>
+
+                <div class="explore-image">
+                  <img src="assets-web/images/course3.png" alt="" />
+                </div>
+              </div>
+              <!-- CARD 4 -->
+              <div class="explore-card">
+                <div class="explore-content">
+                  <span class="tag">CISBC</span>
+                  <h3>
+                    Certificate course in Advanced Accounting and Financial
+                    Management
+                  </h3>
+
+                  <div class="meta">
+                    <span>Offline Mode</span>
+                    <span
+                      ><img src="assets-web/images/book.png" /> 1 Month</span
+                    >
+                  </div>
+                </div>
+
+                <div class="price">₹ 6000</div>
+
+                <div class="explore-image">
+                  <img src="assets-web/images/course4.png" alt="" />
+                </div>
+              </div>
+              <!-- CARD 5 -->
+              <div class="explore-card">
+                <div class="explore-content">
+                  <span class="tag">CISBC</span>
+                  <h3>Certificate course in Animation, Motion Graphics</h3>
+
+                  <div class="meta">
+                    <span>Offline Mode</span>
+                    <span
+                      ><img src="assets-web/images/book.png" /> 1 Month</span
+                    >
+                  </div>
+                </div>
+
+                <div class="price">₹ 30,000</div>
+
+                <div class="explore-image">
+                  <img src="assets-web/images/course5.png" alt="" />
+                </div>
+              </div>
+
+              <!-- CARD 6 -->
+              <div class="explore-card">
+                <div class="explore-content">
+                  <span class="tag">CISBC</span>
+                  <h3>Certificate course in AC, Refrigerator Repairing</h3>
+
+                  <div class="meta">
+                    <span>Offline Mode</span>
+                    <span
+                      ><img src="assets-web/images/book.png" /> 1 Month</span
+                    >
+                  </div>
+                </div>
+
+                <div class="price">₹ 5500</div>
+
+                <div class="explore-image">
+                  <img src="assets-web/images/course2.png" alt="" />
+                </div>
+              </div>
+
+              <div class="explore">
+                <a href="#">Explore More Courses →</a>
+              </div>
             </div>
           </div>
         </div>
@@ -442,10 +471,46 @@
       AOS.init();
     </script>
     <script>
-      function toggleDropdown(button) {
-        button.classList.toggle("active");
-        button.nextElementSibling.classList.toggle("open");
+      document.querySelectorAll(".accordion-header").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          btn.parentElement.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <script>
+      function resetFilters() {
+        let checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+        checkboxes.forEach(function (box) {
+          box.checked = false;
+        });
       }
+    </script>
+
+    <script>
+      function toggleDropdown(element) {
+        element.parentElement.classList.toggle("active");
+      }
+    </script>
+    <script>
+      const listBtn = document.querySelector(".list-btn");
+      const gridBtn = document.querySelector(".grid-btn");
+      const eventList = document.querySelector(".events-list");
+
+      listBtn.addEventListener("click", function () {
+        eventList.classList.remove("grid-view");
+
+        listBtn.classList.add("active");
+        gridBtn.classList.remove("active");
+      });
+
+      gridBtn.addEventListener("click", function () {
+        eventList.classList.add("grid-view");
+
+        gridBtn.classList.add("active");
+        listBtn.classList.remove("active");
+      });
     </script>
   </body>
 </html>
