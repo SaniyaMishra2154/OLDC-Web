@@ -191,12 +191,19 @@ body {
   width: 95%;
 }
 
+.tabs {
+  font-size: 1.4rem;
+  margin: 1rem 1.9rem;
+  margin-top: 4rem;
+}
+
 .tabs span {
   color: #4f0071;
   border: 0.1rem solid #bebaba;
   padding: 1rem;
   padding-top: 0;
   padding-bottom: 0;
+  cursor: pointer;
 }
 
 /* hover */

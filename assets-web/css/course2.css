@@ -238,21 +238,47 @@ body {
 
 .tabs {
   display: flex;
-  gap: 2rem;
-  border-bottom: 0.12rem solid #d6d1da;
-  margin-bottom: 2rem;
-  margin-left: 0rem;
+  gap: 30px;
+  border-bottom: 1px solid #ddd;
 }
 
-.tabs span {
-  padding-bottom: 0.6rem;
-  cursor: pointer;
-  font-size: 1.1rem;
+.tabs a {
+  font-size: 1.2rem;
 }
 
-.tabs span:hover {
+.tab-btn {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 0;
+  position: relative;
+}
+
+.tab-btn:hover {
   color: #4f0071;
-  border-bottom: 0.18rem solid #4f0071;
+}
+
+.tab-btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 0;
+  height: 0.2rem;
+  background: #4f0071;
+  transition: 0.3s;
+}
+
+.tab-btn:hover::after {
+  width: 100%;
+}
+
+.tab-btn.active {
+  color: #4f0071;
+  font-weight: 600;
+}
+
+.tab-btn.active::after {
+  width: 100%;
 }
 
 .section {
