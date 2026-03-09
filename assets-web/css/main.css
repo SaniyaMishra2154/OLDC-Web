@@ -726,6 +726,7 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
   .alerts-tabs {
     flex-direction: row;
     align-items: center;
+    gap: 0.3rem;
   }
   button.alerts-tab {
     font-size: 1rem;
@@ -3530,7 +3531,6 @@ p a {
 
   /* Hamburger ko upar lana */
   .secondary-menu .navbar-toggler {
-    position: absolute;
     /* top: -7.2rem; */ /* logo ke level pe */
     /* right: 12rem; */ /* search icon ke bagal me */
     z-index: 10;

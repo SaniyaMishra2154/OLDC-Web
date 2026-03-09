@@ -50,6 +50,9 @@ body {
   .course-hero-inner {
     max-inline-size: 100%;
   }
+  img.course-hero-img {
+    height: 20rem;
+  }
 }
 
 /* TABLETS */
@@ -146,9 +149,17 @@ body {
   .search-box {
     width: 100%;
   }
-
   .search-box input {
     width: 100%;
+  }
+  .container-course {
+    display: block;
+  }
+  .course-search-box {
+    margin-top: 1rem;
+  }
+  .course-search-box input {
+    width: 18rem;
   }
 }
 
@@ -394,6 +405,28 @@ body {
   .filter-wrapper {
     max-width: 100%;
   }
+  .d-flex.my-2.my-lg-0.align-items-center.justify-content-end.right-brand {
+    margin-right: 0rem;
+  }
+  button.navbar-toggler.d-lg-none {
+    display: none;
+  }
+  aside.sidebar.aos-init.aos-animate {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .events-list.grid-view {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  .events-list.grid-view .price {
+    margin-left: 11rem;
+  }
+  .events-list.grid-view .explore {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 @media (min-width: 48em) {
@@ -423,6 +456,10 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+  }
+  .events-list.grid-view .explore {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
