@@ -40,26 +40,32 @@ h2 strong {
   color: #deb04c;
 }
 
-@media (max-width: 75em) {
-  h2 {
-    font-size: 4rem;
-    margin-left: 11rem;
-    margin-top: -2rem;
-  }
-  .d-flex.align-items-start.justify-content-between.border-cs {
-    margin-right: -7rem;
-    margin-left: -1rem;
-  }
+@media (min-width: 992px) and (max-width: 1200px) {
   nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
-    margin-right: -5rem;
-    margin-top: -3rem;
+    margin-right: -9rem;
+    margin-top: -1rem;
   }
-  .d-flex.my-2.my-lg-0.align-items-center.justify-content-end.right-brand {
-    margin-right: -4rem;
+  h2 {
+    font-size: 5rem;
+    margin-left: 4rem;
+    margin-top: -6.5rem;
   }
 }
 
-@media (max-width: 1500px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
+  h2 {
+    font-size: 5rem;
+    margin-left: 9rem;
+    margin-top: -6.5rem;
+  }
+
+  nav.navbar.secondary-menu.navbar-expand-lg.position-absolute {
+    margin-right: -10rem;
+    margin-top: -1rem;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1500px) {
   h2 {
     font-size: 5rem;
     margin-left: 11rem;

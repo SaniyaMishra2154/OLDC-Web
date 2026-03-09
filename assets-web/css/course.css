@@ -400,16 +400,72 @@ body {
   .filter-wrapper {
     max-width: 20rem;
   }
+  .sidebar {
+    margin-top: 4.5rem;
+    margin-left: 0rem;
+    margin-right: -4rem;
+  }
+  .tabs {
+    width: 100%;
+    margin-left: 0rem;
+  }
+  .events-list {
+    width: 130%;
+    margin-left: -4rem;
+  }
+  .price {
+    right: 12rem;
+  }
+  .events-list.grid-view .price {
+    right: 27rem;
+  }
+  .events-list.grid-view {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
 }
 
 @media (min-width: 62em) {
   .filter-wrapper {
     max-width: 22rem;
   }
+  .events-list {
+    width: 110%;
+  }
+  .events-list.grid-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .price {
+    right: 15rem;
+  }
+  .events-list.grid-view .explore {
+    margin-right: -13rem;
+  }
+
+  .events-list.grid-view .price {
+    right: 27rem;
+  }
 }
 
 @media (min-width: 75em) {
   .filter-wrapper {
     max-width: 24rem;
+  }
+  .events-list {
+    width: 106%;
+  }
+  .events-list.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .price {
+    right: 28rem;
+  }
+  .events-list.grid-view .price {
+    right: 26rem;
   }
 }

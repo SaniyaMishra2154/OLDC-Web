@@ -583,7 +583,7 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
 
 /* Section Sixth */
 .alerts-section {
-  max-width: 75rem;
+  max-width: 100rem;
   margin: auto;
   padding: 4rem 2rem;
 }
@@ -736,7 +736,7 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
 
 @media (min-width: 48em) {
   .alerts-cards {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -746,6 +746,10 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
   .alerts-section {
     padding: 5rem 3rem;
   }
+
+  .alerts-cards {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* 🖥 min-width 1200px → 75em */
@@ -753,6 +757,10 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
 @media (min-width: 75em) {
   .title-alerts {
     font-size: 2.2rem;
+  }
+
+  .alerts-cards {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1201,7 +1209,7 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
     position: relative;
   }
   .carousel-item img {
-    height: 90vh; /* 100vh nahi */
+    height: 70vh; /* 100vh nahi */
   }
   .carousel-caption {
     top: 45%;
@@ -1264,6 +1272,13 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
     right: 14rem;
     top: -2rem;
   }
+  .carousel-item img {
+    height: 70vh; /* 100vh nahi */
+  }
+
+  .carousel-caption {
+    margin-right: 0;
+  }
 }
 
 @media (max-width: 430px) {
@@ -1309,6 +1324,28 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
   }
 }
 @media (max-width: 430px) {
+  /* toggle button hide */
+  .top-header .navbar-toggler {
+    display: none !important;
+  }
+
+  /* menu items hide */
+  #collapsibleNavId .navbar-nav {
+    display: none !important;
+  }
+
+  /* collapse ko visible rakho */
+  #collapsibleNavId {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  /* logo center me */
+  .logo-icon {
+    display: block;
+    margin: auto;
+  }
+
   /* secondary menu ko normal flow me lao */
   .secondary-menu {
     position: relative !important;
@@ -1346,6 +1383,27 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
 }
 
 @media (max-width: 375px) {
+  /* toggle button hide */
+  .top-header .navbar-toggler {
+    display: none !important;
+  }
+
+  /* menu items hide */
+  #collapsibleNavId .navbar-nav {
+    display: none !important;
+  }
+
+  /* collapse ko visible rakho */
+  #collapsibleNavId {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  /* logo center me */
+  .logo-icon {
+    display: block;
+    margin: auto;
+  }
   /* Top border row */
   .border-cs {
     flex-direction: row;
@@ -1377,13 +1435,26 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
     visibility: visible !important;
     width: 100%;
     z-index: 999;
-    margin-top: -40%;
+    margin-top: -35%;
     /*margin-left: -15%;*/
     margin-left: 0rem;
   }
 }
 
 @media (max-width: 768px) {
+  .d-flex.align-items-start.justify-content-between.border-cs1 {
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
+  .d-flex.my-2.my-lg-0.align-items-center.justify-content-end.right-brand1 {
+    margin-right: -1rem;
+  }
+
+  ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
+    margin-left: -1rem;
+  }
+
   /* Logo fix */
   .nav-brand img {
     position: static;
@@ -1612,7 +1683,7 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
     margin-left: 1rem;
   }
   .info-card {
-    width: 90%;
+    width: 100%;
     margin-bottom: 1.5rem;
   }
 
@@ -1625,6 +1696,9 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
   }
 }
 @media (max-width: 430px) {
+  .info-card {
+    width: 100%;
+  }
   .card-overlay p {
     display: none;
   }
@@ -2082,7 +2156,7 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
   /* 🔥 Bootstrap column reset (MAIN FIX) */
   .courses-section .col-lg-9 .col-md-3 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 34%;
     max-width: 80%;
   }
 
@@ -2099,7 +2173,7 @@ ul.navbar-nav.me-auto.mt-2.mt-lg-0 {
     height: 30rem;
     /*width: 17rem;*/
     margin-top: 1.25rem;
-    margin-right: 3rem;
+    margin-right: 0rem;
   }
 
   .cards-overlay {
@@ -3652,18 +3726,26 @@ p a {
 
 /* 📲 min-width 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 768px) and (max-width: 992px) {
 }
 
 /* 💻 min-width 992px */
 
-@media (min-width: 62em) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .mega-menu {
-    padding: 2.5rem 4rem;
+    padding: 1.5rem 1rem;
+    margin-left: 44.3rem;
+    margin-top: -1rem;
+    width: 175%;
+  }
+
+  .mega-col a {
+    padding-left: 3rem;
+    width: 100%;
   }
 }
 
-@media (max-width: 1366px) {
+@media (min-width: 1200px) and (max-width: 1366px) {
   .mega-menu {
     margin-left: 35.2rem;
     margin-top: -1rem;
